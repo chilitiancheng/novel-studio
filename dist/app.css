@@ -94,3 +94,7 @@ main{width:100%;min-width:0}
 .graph-card{overflow:visible}.graph-node-actions{border-radius:0 0 7px 7px}
 .graph-port{position:absolute;left:calc(50% - 10px);width:20px;height:20px;border:2px solid #54754a;border-radius:50%;padding:0;background:#fff;z-index:5;cursor:crosshair;touch-action:manipulation}.graph-port:hover,.graph-port:focus-visible{background:#cfe0c3}.graph-port:disabled{opacity:.35;cursor:default}.port-in{top:-10px}.port-out{bottom:-10px;background:#dce9d4}
 .graph-lines .connection-line{pointer-events:stroke;cursor:pointer;stroke-width:4}.graph-lines .connection-line.custom{stroke:#548b80;stroke-dasharray:5 3}.graph-lines .connection-line.selected-line{stroke:#b47b36;stroke-width:6}
+
+.startup-status{padding:12px 14px;margin:10px 0 16px;border:1px solid #d4ddc8;background:#f3f6ee;border-radius:6px;color:#52674c;font-size:12px}.graph-lines .draft-connection{stroke:#72936a;stroke-width:3;stroke-dasharray:5 4;pointer-events:none}
+
+#graphArea{position:relative}.connection-bar{position:absolute;top:0;left:0;right:0;z-index:25;box-shadow:0 2px 6px #0001}.graph-port{transform:scale(var(--port-scale,1));transform-origin:center}
