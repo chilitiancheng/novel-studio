@@ -261,3 +261,115 @@
 
 /* Unchecked reveal: red text directly on the current page background. */
 #workskin .inline-red-text{color:#ff0000!important;background-color:transparent}
+
+/* Wider decorative coverage stays clipped to its own paper section. */
+#workskin .font-art{height:400px;max-height:100%;overflow:hidden}
+#workskin .font-art .chaos-row,#workskin .font-dense .chaos-row{overflow:hidden;padding:0;min-height:0}
+#workskin .font-art .chaos-main,#workskin .font-dense .chaos-main{position:absolute;top:0;left:0;width:100%;font-size:1.9em;line-height:0.95}
+#workskin .font-art .chaos-echo,#workskin .font-dense .chaos-echo{width:100%;font-size:1.85em;line-height:1;transform:translate(0.12em,0.45em) rotate(-2deg);opacity:0.8}
+#workskin .font-art .chaos-small,#workskin .font-dense .chaos-small{width:100%;font-size:1.15em;line-height:1.05;transform:translate(-0.1em,2em);opacity:0.9}
+#workskin .font-art .chaos-cross{width:100%;font-size:1.35em;line-height:1;transform:translate(0.15em,3em) rotate(2deg);opacity:0.7}
+/* The remaining area below an object is the continuation target. */
+#workskin .game-container .effect-page>.step-inner>.story-step:not([open]){display:flex;flex-direction:column;flex:1;align-self:stretch;min-height:120px;width:100%}
+#workskin .game-container .effect-page>.step-inner>.story-step:not([open])>summary.effect-advance{display:block;flex:1;min-height:120px;width:100%}
+
+#workskin .font-art .chaos-share-1{height:100.0%}
+#workskin .font-art .chaos-share-2{height:50.0%}
+#workskin .font-art .chaos-share-3{height:33.33333%}
+#workskin .font-art .chaos-share-4{height:25.0%}
+#workskin .font-art .chaos-share-5{height:20.0%}
+#workskin .font-art .chaos-share-6{height:16.66667%}
+#workskin .font-art .chaos-share-7{height:14.28571%}
+#workskin .font-art .chaos-share-8{height:12.5%}
+#workskin .font-art .chaos-share-9{height:11.11111%}
+#workskin .font-art .chaos-share-10{height:10.0%}
+#workskin .font-art .chaos-share-11{height:9.09091%}
+#workskin .font-art .chaos-share-12{height:8.33333%}
+#workskin .font-art .chaos-share-13{height:7.69231%}
+#workskin .font-art .chaos-share-14{height:7.14286%}
+#workskin .font-art .chaos-share-15{height:6.66667%}
+#workskin .font-art .chaos-share-16{height:6.25%}
+#workskin .font-art .chaos-share-17{height:5.88235%}
+#workskin .font-art .chaos-share-18{height:5.55556%}
+#workskin .font-art .chaos-share-19{height:5.26316%}
+#workskin .font-art .chaos-share-20{height:5.0%}
+#workskin .font-art .chaos-share-21{height:4.7619%}
+#workskin .font-art .chaos-share-22{height:4.54545%}
+#workskin .font-art .chaos-share-23{height:4.34783%}
+#workskin .font-art .chaos-share-24{height:4.16667%}
+#workskin .font-art .chaos-share-25{height:4.0%}
+#workskin .font-art .chaos-share-26{height:3.84615%}
+#workskin .font-art .chaos-share-27{height:3.7037%}
+#workskin .font-art .chaos-share-28{height:3.57143%}
+#workskin .font-art .chaos-share-29{height:3.44828%}
+#workskin .font-art .chaos-share-30{height:3.33333%}
+#workskin .font-art .chaos-share-31{height:3.22581%}
+#workskin .font-art .chaos-share-32{height:3.125%}
+#workskin .font-art .chaos-share-33{height:3.0303%}
+#workskin .font-art .chaos-share-34{height:2.94118%}
+#workskin .font-art .chaos-share-35{height:2.85714%}
+#workskin .font-art .chaos-share-36{height:2.77778%}
+#workskin .font-art .chaos-share-37{height:2.7027%}
+#workskin .font-art .chaos-share-38{height:2.63158%}
+#workskin .font-art .chaos-share-39{height:2.5641%}
+#workskin .font-art .chaos-share-40{height:2.5%}
+#workskin .font-art .chaos-share-41{height:2.43902%}
+#workskin .font-art .chaos-share-42{height:2.38095%}
+#workskin .font-art .chaos-share-43{height:2.32558%}
+#workskin .font-art .chaos-share-44{height:2.27273%}
+#workskin .font-art .chaos-share-45{height:2.22222%}
+#workskin .font-art .chaos-share-46{height:2.17391%}
+#workskin .font-art .chaos-share-47{height:2.12766%}
+#workskin .font-art .chaos-share-48{height:2.08333%}
+#workskin .font-art .chaos-share-49{height:2.04082%}
+#workskin .font-art .chaos-share-50{height:2.0%}
+#workskin .font-art .chaos-share-51{height:1.96078%}
+#workskin .font-art .chaos-share-52{height:1.92308%}
+#workskin .font-art .chaos-share-53{height:1.88679%}
+#workskin .font-art .chaos-share-54{height:1.85185%}
+#workskin .font-art .chaos-share-55{height:1.81818%}
+#workskin .font-art .chaos-share-56{height:1.78571%}
+#workskin .font-art .chaos-share-57{height:1.75439%}
+#workskin .font-art .chaos-share-58{height:1.72414%}
+#workskin .font-art .chaos-share-59{height:1.69492%}
+#workskin .font-art .chaos-share-60{height:1.66667%}
+#workskin .font-art .chaos-share-61{height:1.63934%}
+#workskin .font-art .chaos-share-62{height:1.6129%}
+#workskin .font-art .chaos-share-63{height:1.5873%}
+#workskin .font-art .chaos-share-64{height:1.5625%}
+#workskin .font-art .chaos-share-65{height:1.53846%}
+#workskin .font-art .chaos-share-66{height:1.51515%}
+#workskin .font-art .chaos-share-67{height:1.49254%}
+#workskin .font-art .chaos-share-68{height:1.47059%}
+#workskin .font-art .chaos-share-69{height:1.44928%}
+#workskin .font-art .chaos-share-70{height:1.42857%}
+#workskin .font-art .chaos-share-71{height:1.40845%}
+#workskin .font-art .chaos-share-72{height:1.38889%}
+#workskin .font-art .chaos-share-73{height:1.36986%}
+#workskin .font-art .chaos-share-74{height:1.35135%}
+#workskin .font-art .chaos-share-75{height:1.33333%}
+#workskin .font-art .chaos-share-76{height:1.31579%}
+#workskin .font-art .chaos-share-77{height:1.2987%}
+#workskin .font-art .chaos-share-78{height:1.28205%}
+#workskin .font-art .chaos-share-79{height:1.26582%}
+#workskin .font-art .chaos-share-80{height:1.25%}
+#workskin .font-art .chaos-share-81{height:1.23457%}
+#workskin .font-art .chaos-share-82{height:1.21951%}
+#workskin .font-art .chaos-share-83{height:1.20482%}
+#workskin .font-art .chaos-share-84{height:1.19048%}
+#workskin .font-art .chaos-share-85{height:1.17647%}
+#workskin .font-art .chaos-share-86{height:1.16279%}
+#workskin .font-art .chaos-share-87{height:1.14943%}
+#workskin .font-art .chaos-share-88{height:1.13636%}
+#workskin .font-art .chaos-share-89{height:1.1236%}
+#workskin .font-art .chaos-share-90{height:1.11111%}
+#workskin .font-art .chaos-share-91{height:1.0989%}
+#workskin .font-art .chaos-share-92{height:1.08696%}
+#workskin .font-art .chaos-share-93{height:1.07527%}
+#workskin .font-art .chaos-share-94{height:1.06383%}
+#workskin .font-art .chaos-share-95{height:1.05263%}
+#workskin .font-art .chaos-share-96{height:1.04167%}
+#workskin .font-art .chaos-share-97{height:1.03093%}
+#workskin .font-art .chaos-share-98{height:1.02041%}
+#workskin .font-art .chaos-share-99{height:1.0101%}
+#workskin .font-art .chaos-share-100{height:1.0%}
