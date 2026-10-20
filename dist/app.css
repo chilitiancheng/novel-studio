@@ -107,3 +107,6 @@ main{width:100%;min-width:0}
 @media(hover:none){.graph-card.selected .graph-port:not(:disabled){opacity:1;pointer-events:auto}}
 
 .graph-port{width:28px;height:28px;left:calc(50% - 14px)}.port-in{top:-14px}.port-out{bottom:-14px}
+
+.graph-card-head{height:52px;gap:8px;padding:0 12px;justify-content:flex-start;font-size:13px}.graph-card-head>span:not(.drag-grip){flex:1}.graph-card-head .drag-grip{flex:none;font-size:22px;line-height:1;color:#819375;pointer-events:none}.graph-card-head span{pointer-events:none}
+.port-in{top:calc(-14px - 14px * var(--port-scale,1))}.port-out{bottom:calc(-14px - 14px * var(--port-scale,1))}
