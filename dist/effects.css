@@ -258,3 +258,6 @@
 #workskin .letter-scene .font-art.font-height-128,#workskin .journal-page .font-art.font-height-128{height:128px;max-height:128px}
 #workskin .letter-scene .font-art.font-height-136,#workskin .journal-page .font-art.font-height-136{height:136px;max-height:136px}
 #workskin .letter-scene .font-art.font-height-144,#workskin .journal-page .font-art.font-height-144{height:144px;max-height:144px}
+
+/* Unchecked reveal: red text directly on the current page background. */
+#workskin .inline-red-text{color:#ff0000!important;background-color:transparent}
