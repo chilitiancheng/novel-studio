@@ -89,3 +89,8 @@ main{width:100%;min-width:0}
 .after-text-field:empty:before{content:attr(data-placeholder);color:#a5ada2;font-size:12px}
 .graph-card>.after-paper{margin:10px 12px 44px;padding:10px;min-height:75px;height:100px;max-height:100px;overflow:auto;border-top:1px dashed #dce4d5;font-size:14px}
 .theme-setting{display:flex;align-items:center;justify-content:space-between;gap:5px;color:#7e8c79;font-size:11px;margin:4px 0 12px}.theme-setting select{min-width:0;border:1px solid #e6e9e2;border-radius:4px;padding:5px;background:#fff;color:#436651}
+
+.connection-bar{padding:9px 10px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;background:#f8f9f5;border-bottom:1px solid #dde4d6;font-size:11px;color:#52674a}.connection-bar span{flex:1;min-width:100px}.connection-bar button{padding:4px 6px;font-size:11px;border:1px solid #d3ddcb;background:#fff}
+.graph-card{overflow:visible}.graph-node-actions{border-radius:0 0 7px 7px}
+.graph-port{position:absolute;left:calc(50% - 10px);width:20px;height:20px;border:2px solid #54754a;border-radius:50%;padding:0;background:#fff;z-index:5;cursor:crosshair;touch-action:manipulation}.graph-port:hover,.graph-port:focus-visible{background:#cfe0c3}.graph-port:disabled{opacity:.35;cursor:default}.port-in{top:-10px}.port-out{bottom:-10px;background:#dce9d4}
+.graph-lines .connection-line{pointer-events:stroke;cursor:pointer;stroke-width:4}.graph-lines .connection-line.custom{stroke:#548b80;stroke-dasharray:5 3}.graph-lines .connection-line.selected-line{stroke:#b47b36;stroke-width:6}
