@@ -98,3 +98,12 @@ main{width:100%;min-width:0}
 .startup-status{padding:12px 14px;margin:10px 0 16px;border:1px solid #d4ddc8;background:#f3f6ee;border-radius:6px;color:#52674c;font-size:12px}.graph-lines .draft-connection{stroke:#72936a;stroke-width:3;stroke-dasharray:5 4;pointer-events:none}
 
 #graphArea{position:relative}.connection-bar{position:absolute;top:0;left:0;right:0;z-index:25;box-shadow:0 2px 6px #0001}.graph-port{transform:scale(var(--port-scale,1));transform-origin:center}
+
+.graph-card-head{cursor:grab;touch-action:none;user-select:none}.graph-card-head button{cursor:pointer}.graph-card.node-moving{z-index:20;box-shadow:0 8px 24px #354c3428}.graph-card.node-moving .graph-card-head{cursor:grabbing}
+.graph-port{opacity:0;pointer-events:none;transition:opacity .12s,background-color .12s;touch-action:none}
+.graph-card:hover .graph-port,.graph-card.ports-near .graph-port,.graph-card:focus-within .graph-port,.graph-card.link-origin .port-out,.graph-card.link-ready .port-in,.graph-card.snap-target .port-in{opacity:1;pointer-events:auto}
+.graph-card .graph-port:disabled{opacity:0;pointer-events:none}
+.graph-card.snap-target{border-color:#4b9e83;box-shadow:0 0 0 4px #63aa8540}.graph-card.snap-target .port-in{background:#7ec5a7;border-color:#3c8a6c}
+@media(hover:none){.graph-card.selected .graph-port:not(:disabled){opacity:1;pointer-events:auto}}
+
+.graph-port{width:28px;height:28px;left:calc(50% - 14px)}.port-in{top:-14px}.port-out{bottom:-14px}
