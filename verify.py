@@ -5,7 +5,7 @@ site = root / 'dist'
 expected = {'index.html', 'app.js', 'app.css', 'effects.css'}
 assert {p.name for p in site.iterdir()} == expected, 'Only public application files may be deployed'
 css = (site / 'effects.css').read_text()
-assert not re.search(r'clip-path|gradient|scrollbar|grid(?:-[a-z-]+)?\s*:|display\s*:\s*(?:inline-)?grid|(?:^|[;{])\s*font\s*:|background\s*:[^;}]*url\(', css, re.I)
+assert not re.search(r'clip-path|gradient|scrollbar|(?:row-|column-)?gap\s*:|grid(?:-[a-z-]+)?\s*:|display\s*:\s*(?:inline-)?grid|(?:^|[;{])\s*font\s*:|background\s*:[^;}]*url\(', css, re.I)
 html = (site / 'index.html').read_text()
 assert 'id="workskin"' in html
 assert 'src="app.js"' in html and 'href="app.css"' in html
