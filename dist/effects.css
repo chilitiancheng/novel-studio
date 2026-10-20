@@ -1,0 +1,260 @@
+#workskin .game-container,#workskin .game-container *{box-sizing:border-box}
+#workskin .game-container{position:relative;width:100%;height:600px;margin:20px auto;overflow:hidden;background:#d3d3d3;color:#333}
+#workskin .game-container .story-step,#workskin .game-container .story-step>summary{border:0;margin:0;padding:0;list-style:none}
+#workskin .game-container .story-step>summary{display:block;cursor:pointer}
+#workskin summary::-webkit-details-marker{display:none}
+#workskin .game-container .story-step[open]>summary{display:none}
+#workskin .game-container .story-step[open]{position:absolute;top:0;left:0;width:100%;height:100%;z-index:5;background:#d3d3d3}
+#workskin .game-container .step-text,#workskin .game-container .fork-container{display:block;width:100%;height:600px;overflow-y:auto;overflow-x:hidden;background:inherit}
+#workskin .game-container .step-inner,#workskin .game-container .fork-inner{display:flex;flex-direction:column;align-items:center;min-height:100%;width:100%}
+#workskin .game-container .text-content,#workskin .game-container .fork-content{margin:auto;padding:40px 20px;width:100%;text-align:center;line-height:1.8;color:inherit}
+#workskin .game-container .option-btn{display:block;width:80%;max-width:360px;margin:15px auto;padding:12px 10px;border:1px solid #900;background:#f5f5f5;color:#333;text-align:center;cursor:pointer;font-weight:bold;line-height:1.5}
+#workskin .letter-scene{width:100%;margin:auto;padding:130px 30px 40px;text-align:left;line-height:normal;box-sizing:border-box}
+#workskin .letter-scene .letter-hint{margin:20px auto;font-size:12px;line-height:1.6;color:#666;text-align:center}
+#workskin .letter-scene .trifold_letter{position:relative;width:600px;max-width:80%;margin:0 auto;font-size:0;font-family:Papyrus,Georgia,serif}
+#workskin .letter-scene .letter-switch{position:static;height:240px;margin:0;padding:0;border:0;background:transparent;transition:height 2s ease}
+#workskin .letter-scene .letter-switch[open]{height:660px}
+#workskin .letter-scene .letter_cover{display:block;position:absolute;top:-20px;left:-5%;width:110%;height:240px;margin:0;padding:0;list-style:none;color:#383c45;background:#f4f1d7;border:1px solid #b8b39e;box-shadow:-2px 1px 5px 1px rgba(0,0,0,0.12);z-index:8;cursor:pointer;transition:top 2s ease,left 2s ease,transform 2s ease,z-index 0s linear 2s}
+#workskin .letter-scene .letter-switch[open]>.letter_cover{top:-100px;left:0;background:#f9f6d5;transform:rotate(15deg);z-index:0}
+#workskin .letter-scene .letter_cover_text{position:relative;top:65px;width:40%;margin:0 auto;font-size:20px;line-height:1.5;text-align:center}
+#workskin .letter-scene .letter_cover_text_top{position:absolute;top:10px;left:20px;width:40%;font-size:15px;line-height:1.5}
+#workskin .letter-scene .letter_cover_stamp{position:absolute;top:20px;right:20px;width:80px;max-width:25%;height:75px;margin:0;border:1px solid #ccc;border-radius:3px;background-color:#f5f5f5;background-image:url("https://archive.org/download/touch_202010/TOUCH.png");background-position:center;background-size:contain;background-repeat:no-repeat}
+#workskin .letter-scene .letter_cover_hint{position:absolute;bottom:12px;left:0;width:100%;font-size:12px;text-align:center}
+#workskin .letter-scene .letter_top,#workskin .letter-scene .letter_mid,#workskin .letter-scene .letter_bot,#workskin .letter-scene .letter_top2,#workskin .letter-scene .letter_mid2,#workskin .letter-scene .letter_bot2{position:absolute;top:0;left:0;width:100%;height:200px;color:#383c45;border-left:1px solid #b8b39e;border-right:1px solid #b8b39e;opacity:0;visibility:hidden;transform:skew(0);transition:top 2s ease,left 2s ease,transform 2s ease,opacity 1s ease,visibility 0s linear 2s;box-sizing:border-box}
+#workskin .letter-scene .letter_top,#workskin .letter-scene .letter_top2{background:#fff8e4;border-top:1px solid #b8b39e;border-radius:4px 4px 0 0}
+#workskin .letter-scene .letter_mid,#workskin .letter-scene .letter_mid2{background:#e9e0c5}
+#workskin .letter-scene .letter_bot,#workskin .letter-scene .letter_bot2{background:#f2e7c9;border-bottom:1px solid #b8b39e;border-radius:0 0 4px 4px}
+#workskin .letter-scene .letter_top{z-index:7}#workskin .letter-scene .letter_mid{z-index:6}#workskin .letter-scene .letter_bot{z-index:5}#workskin .letter-scene .letter_top2{z-index:4}#workskin .letter-scene .letter_mid2{z-index:3}#workskin .letter-scene .letter_bot2{z-index:2}
+#workskin .letter-scene .letter_top_text,#workskin .letter-scene .letter_mid_text,#workskin .letter-scene .letter_bot_text,#workskin .letter-scene .letter_top_text2,#workskin .letter-scene .letter_mid_text2,#workskin .letter-scene .letter_bot_text2{height:100%;margin:0;padding:18px 20px;overflow-y:auto;overflow-x:hidden;font-size:18px;line-height:1.6;word-wrap:break-word;box-sizing:border-box}
+#workskin .letter-scene .trifold_letter p{margin:0 0 12px;color:inherit}#workskin .letter-scene .letter_signature{text-align:right}
+#workskin .letter-scene .letter-switch[open]~.letter_top,#workskin .letter-scene .letter-switch[open]~.letter_mid,#workskin .letter-scene .letter-switch[open]~.letter_bot,#workskin .letter-scene .letter-switch[open]~.trifold_letter2 .letter_top2,#workskin .letter-scene .letter-switch[open]~.trifold_letter2 .letter_mid2,#workskin .letter-scene .letter-switch[open]~.trifold_letter2 .letter_bot2{opacity:1;visibility:visible;transition:top 2s ease,left 2s ease,transform 2s ease,opacity 1s ease,visibility 0s}
+#workskin .letter-scene .letter-switch[open]~.letter_top{top:0;left:-20px;transform:skew(5deg)}#workskin .letter-scene .letter-switch[open]~.letter_mid{top:200px;left:-20px;transform:skew(-5deg)}#workskin .letter-scene .letter-switch[open]~.letter_bot{top:400px;left:-20px;transform:skew(5deg)}
+#workskin .letter-scene .trifold_letter2{position:absolute;top:0;left:0;width:100%;height:240px;margin:0;font-size:0}
+#workskin .letter-scene .letter-switch[open]~.trifold_letter2{height:650px}
+#workskin .letter-scene .letter-switch[open]~.trifold_letter2 .letter_top2{top:50px;left:10px;transform:skew(5deg)}#workskin .letter-scene .letter-switch[open]~.trifold_letter2 .letter_mid2{top:250px;left:10px;transform:skew(-5deg)}#workskin .letter-scene .letter-switch[open]~.trifold_letter2 .letter_bot2{top:450px;left:10px;transform:skew(5deg)}
+#workskin .letter-scene .letter-switch[open]~.trifold_letter2:hover .letter_top2,#workskin .letter-scene .letter-switch[open]~.trifold_letter2:focus-within .letter_top2{top:-10px;left:10px;z-index:11;transition:.5s}
+#workskin .letter-scene .letter-switch[open]~.trifold_letter2:hover .letter_mid2,#workskin .letter-scene .letter-switch[open]~.trifold_letter2:focus-within .letter_mid2{top:190px;left:10px;z-index:10;transition:.5s}
+#workskin .letter-scene .letter-switch[open]~.trifold_letter2:hover .letter_bot2,#workskin .letter-scene .letter-switch[open]~.trifold_letter2:focus-within .letter_bot2{top:390px;left:10px;z-index:9;transition:.5s}
+#workskin .receipt{max-width:340px;margin:26px auto;padding:30px 26px;background:#f6f0df;color:#4d483e;font-size:15px;line-height:1.8;font-family:monospace;box-shadow:0 4px 16px rgba(0,0,0,0.08);border-bottom:5px dotted white}
+#workskin .receipt .receipt-title{text-align:center;letter-spacing:4px;border-bottom:1px dashed #a9a18f;padding-bottom:15px;margin-bottom:15px}
+#workskin .receipt .barcode{height:48px;margin:20px auto 6px;width:80%;text-align:center;overflow:hidden;white-space:nowrap}
+#workskin .receipt .receipt-foot{text-align:center;font-size:11px;letter-spacing:2px}
+#workskin .tear-ticket{max-width:440px;margin:24px auto;border:1px solid #c8b89d;background:#f3e8d1;color:#534b3e;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+#workskin .tear-ticket>summary{list-style:none;cursor:pointer;padding:20px;text-align:center;border-bottom:2px dashed #b7a482;transition:transform .4s,opacity .4s}
+#workskin .tear-ticket[open]>summary{transform:rotate(-3deg) translateX(8px);opacity:.55}
+#workskin .tear-ticket .ticket-content{padding:24px}
+#workskin .barcode span{display:inline-block;height:48px;background:#333;margin-right:3px;width:2px}#workskin .barcode .wide{width:5px}
+#workskin .text-highlight{background:#e5ebad;color:inherit;padding:2px 0}
+#workskin .text-redact{background:#303732;color:#303732;cursor:pointer;border-radius:2px;transition:color .3s}#workskin .text-redact:hover,#workskin .text-redact:focus{color:#fff}
+#workskin .receipt p,#workskin .ticket-content p,#workskin .text-content p{color:inherit}
+@media(max-width:600px){#workskin .letter-scene{padding:130px 12px 40px}#workskin .letter-scene .trifold_letter{max-width:90%}#workskin .letter-scene .letter_cover_text{font-size:16px}#workskin .letter-scene .letter_cover_text_top{font-size:12px}#workskin .letter-scene .letter_top_text,#workskin .letter-scene .letter_mid_text,#workskin .letter-scene .letter_bot_text,#workskin .letter-scene .letter_top_text2,#workskin .letter-scene .letter_mid_text2,#workskin .letter-scene .letter_bot_text2{padding:14px;font-size:16px}}
+#workskin .game-container .story-step>summary{position:relative}
+#workskin .game-container .step-hint{position:absolute;bottom:20px;left:0;width:100%;text-align:center;font-size:12px;color:#666}
+/* 用户提供的小票条码：实体边框与内阴影，无渐变。 */
+#workskin .receipt-barcode-box{margin:12px auto 4px auto;text-align:center}
+#workskin .receipt-barcode-lines{width:140px;height:32px;margin:0 auto;box-sizing:border-box;border-left:3px solid #222;border-right:4px solid #222;background:#fff;box-shadow:inset 6px 0 0 #fff,inset 10px 0 0 #222,inset 14px 0 0 #fff,inset 20px 0 0 #222,inset 22px 0 0 #fff,inset 28px 0 0 #222,inset 36px 0 0 #fff,inset 42px 0 0 #222,inset 48px 0 0 #fff,inset 52px 0 0 #222,inset 60px 0 0 #fff,inset 66px 0 0 #222,inset 72px 0 0 #fff,inset 80px 0 0 #222,inset 86px 0 0 #fff,inset 90px 0 0 #222,inset 98px 0 0 #fff,inset 104px 0 0 #222,inset 112px 0 0 #fff,inset 118px 0 0 #222,inset 124px 0 0 #fff,inset 128px 0 0 #222}
+#workskin .receipt-barcode-num{font-size:8px;letter-spacing:1px;color:#555555;margin-top:4px}
+/* 物件单独一页：不套普通剧情的 text-content，不进入切页 summary。 */
+#workskin .game-container .effect-page-content{position:relative;z-index:0;width:100%;padding:20px;box-sizing:border-box;text-align:left}
+#workskin .game-container .letter-page .effect-page-content{padding:0}
+#workskin .game-container .effect-page>.step-inner{align-items:stretch}
+/* 用户提供的主票 / 副券撕拉样式。 */
+#workskin .train-ticket-box{display:flex;justify-content:center;align-items:flex-start;margin:40px auto;padding-bottom:80px;font-family:"Courier New",Courier,monospace;color:#2c2a28}
+#workskin .train-ticket-box p{margin:0 !important;padding:0 !important}
+#workskin .train-ticket-box>p{display:flex;align-items:flex-start}
+#workskin .train-ticket-box br{display:none !important}
+#workskin .ticket-main-body{background-color:#f4efdf;border:2px solid #2c2a28;border-right:2px dashed #7a756b;border-radius:8px 0 0 8px;padding:18px 20px;width:220px;height:220px;box-sizing:border-box;box-shadow:-3px 4px 10px rgba(0,0,0,0.1);position:relative}
+#workskin .ticket-header{font-size:1.3em;font-weight:bold;text-align:center;border-bottom:2px solid #2c2a28;padding-bottom:8px;margin-bottom:15px;letter-spacing:1px}
+#workskin .ticket-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:0.85em;font-weight:bold;width:100%}
+#workskin .ticket-row p{display:flex !important;justify-content:space-between !important;width:100% !important}
+#workskin .ticket-tear-action{margin:0 !important;padding:0 !important;display:block}
+#workskin .ticket-tear-action>summary{display:block;list-style:none;cursor:pointer;margin:0 !important;padding:0 !important}
+#workskin .ticket-tear-action>summary::-webkit-details-marker,#workskin .ticket-tear-action>summary::marker{display:none}
+#workskin .ticket-stub{background-color:#f4efdf;border:2px solid #2c2a28;border-left:none;border-radius:0 8px 8px 0;width:65px;height:220px;box-sizing:border-box;box-shadow:4px 4px 10px rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;transform-origin:top left;transition:transform 1.2s ease,opacity 1.2s ease;margin:0}
+#workskin .ticket-stub span{writing-mode:vertical-rl;text-orientation:mixed;letter-spacing:3px;font-weight:bold;color:#a83232;border:1.5px solid #a83232;padding:10px 4px;font-size:0.9em}
+#workskin .ticket-tear-action[open] .ticket-stub{transform:rotate(35deg) translateY(80px) translateX(15px);opacity:0}
+#workskin .ticket-tear-action[open]>summary{cursor:default}
+#workskin .ticket-main-text{height:100%;overflow-y:auto;text-align:left;font-size:14px;line-height:1.6}
+/* 打印机出纸：开关与纸张为兄弟元素，纸张在纯 CSS 下平移出纸。 */
+#workskin .printer-wrapper{width:320px;max-width:100%;margin:30px auto;color:#333;font-family:"Courier New",Courier,monospace}
+#workskin .printer-card{width:100%;position:relative}
+#workskin .printer-header{display:flex;align-items:center;justify-content:space-between;padding:16px 22px 10px;border:1px solid #b5c2b9;border-bottom:0;border-radius:12px 12px 0 0;background:#dce5df;color:#75857a;font-size:9px;letter-spacing:2px}
+#workskin .printer-indicator{display:block;width:7px;height:7px;border-radius:50%;background:#6d9b79}
+#workskin .printer-trigger{margin:0;padding:0;border:0;background:transparent}
+#workskin .printer-trigger>summary{display:block;list-style:none;cursor:pointer;margin:0;padding:0;background:transparent}
+#workskin .printer-slot{height:26px;padding:5px 28px 13px;background:#dce5df;border:1px solid #b5c2b9;border-top:0;border-radius:0 0 8px 8px}
+#workskin .printer-slot:before{content:"";display:block;height:8px;background:#3d4740;border:1px solid #202923;border-radius:3px}
+#workskin .receipt-window{position:relative;width:260px;max-width:88%;margin:-7px auto 0;max-height:0;overflow:hidden}
+#workskin .printer-wrapper .receipt{width:100%;max-width:100%;margin:0;padding:24px 20px;background:#fffef9;border:1px solid #e3e0d4;border-top:0;border-bottom:3px dashed #d1cbbb;box-sizing:border-box;color:#444;font-size:13px;line-height:1.8;box-shadow:none;transform:translateY(-110%);transition:transform 2.8s linear;text-align:left}
+#workskin .printer-trigger[open]~.receipt-window{max-height:none}
+#workskin .printer-trigger[open]~.receipt-window .receipt{transform:translateY(0)}
+#workskin .printer-wrapper .receipt p{margin:0 0 10px;color:inherit}
+
+/* 桌面悬停自动打印；触屏轻点整个机身由 details 开关控制。 */
+@media (hover:hover) and (pointer:fine){
+#workskin .printer-card:hover>.receipt-window{max-height:none}
+#workskin .printer-card:hover>.receipt-window .receipt{transform:translateY(0)}
+}
+/* 日记本：保留左右页与布封面，使用兼容的纯色和边框。 */
+#workskin .journal-scene{position:relative;width:320px;max-width:100%;height:220px;margin:50px auto;color:#332f2b}
+#workskin .journal-wrapper{position:static;width:100%;height:100%;margin:0;cursor:pointer;background:transparent;border:0;padding:0}
+#workskin .journal-wrapper summary{list-style:none;outline:none;display:block;margin:0;padding:0}
+#workskin .journal-wrapper summary::-webkit-details-marker{display:none}
+#workskin .journal-cover{position:absolute;top:0;right:0;width:50%;height:100%;background-color:#f0eee0;border:1px solid #dcd5c5;border-left:3px double #dcd5c5;border-radius:3px 6px 6px 3px;box-shadow:-3px 0 8px rgba(0,0,0,0.08),2px 5px 12px rgba(0,0,0,0.1);z-index:10;display:flex;align-items:center;justify-content:center;box-sizing:border-box}
+#workskin .journal-cover-title{font-family:serif;font-size:16px;color:#8c5b49;letter-spacing:2px}
+#workskin .journal-wrapper[open]>summary .journal-cover{display:none}
+#workskin .journal-close{display:none;position:absolute;right:0;top:-25px;z-index:12;font-size:11px;color:#8c5b49;cursor:pointer}
+#workskin .journal-wrapper[open]>summary .journal-close{display:block}
+#workskin .journal-base{position:absolute;top:0;left:0;width:100%;height:100%;background:#fffefa;border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,0.08);display:flex;box-sizing:border-box;padding:12px;border:1px solid #eee8ef;z-index:1}
+#workskin .journal-base:after{content:"";position:absolute;top:0;left:50%;width:2px;height:100%;background:rgba(0,0,0,0.05);transform:translateX(-50%)}
+#workskin .journal-page{width:50%;height:100%;box-sizing:border-box;padding:10px 12px;overflow-y:auto;font-family:'Tsukushi A Round Gothic','YuMincho','Hiragino Mincho ProN','KaiTi',serif;color:#332f2b;font-size:12px;line-height:1.6;text-align:left;overflow-wrap:break-word}
+#workskin .journal-page-left{border-right:1px dashed #e5dfd5}
+#workskin .journal-page p{margin:0 0 10px;color:inherit}
+#workskin .journal-header{font-size:11px;color:#a0988e;margin-bottom:8px;display:block;text-align:center;border-bottom:1px solid #f0ece1;padding-bottom:10px}
+#workskin .journal-scene .next-hint{text-align:right;font-size:11px;color:#8c5b49;margin-top:10px;font-weight:bold}
+
+/* Pages remain inside their own effect scene. */
+#workskin .journal-base{display:none;padding:0}
+#workskin .journal-wrapper[open] ~ .journal-base{display:block}
+#workskin .journal-spread{display:flex;width:100%;height:100%;padding:12px;box-sizing:border-box}
+#workskin .journal-turn{position:static;margin:0;padding:0;border:0}
+#workskin .journal-turn > summary{position:absolute;right:12px;bottom:-27px;cursor:pointer;list-style:none;color:#8c5b49;font-size:12px}
+#workskin .journal-turn > summary::-webkit-details-marker{display:none}
+#workskin .journal-next{position:absolute;top:0;left:0;width:100%;height:100%;background:#fffefa}
+#workskin .journal-turn .turn-back{display:none}
+#workskin .journal-turn[open] > summary{left:12px;right:auto;z-index:20}
+#workskin .journal-turn[open] > summary .turn-next{display:none}
+#workskin .journal-turn[open] > summary .turn-back{display:inline}
+
+/* Font blocks supplied by the author. */
+#workskin details.spoiler-text{display:contents!important}
+#workskin details.spoiler-text summary,#workskin details.inline-spoiler summary,#workskin details.stack-spoiler summary{display:inline-block!important;background-color:#000000!important;color:#000000!important;padding:0 4px!important;margin:0!important;cursor:pointer!important;user-select:none!important;list-style:none!important}
+#workskin details.spoiler-text summary{display:inline!important}
+#workskin details.spoiler-text summary::-webkit-details-marker,#workskin details.inline-spoiler summary::-webkit-details-marker,#workskin details.stack-spoiler summary::-webkit-details-marker{display:none!important}
+#workskin details.spoiler-text[open] summary,#workskin details.inline-spoiler[open] summary{background-color:#1a0000!important;color:#ff0000!important;text-shadow:0 0 5px #ff0000!important}
+#workskin .bad-text{font-family:DFKai-SB,BiauKai,FangSong,YuKyokasho,"MS Mincho","Hiragino Mincho ProN",serif}
+#workskin details.inline-spoiler{display:inline!important;margin:0!important;padding:0!important}
+#workskin details.inline-spoiler summary{border-radius:2px!important}
+#workskin details.stack-spoiler{display:inline!important;margin:0!important}
+#workskin details.stack-spoiler summary{padding:0 6px!important}
+#workskin details.stack-spoiler[open]{display:block!important;background-color:#000000!important;padding:20px 15px!important;margin:15px 0!important;border-radius:4px!important}
+#workskin details.stack-spoiler[open] summary{display:none!important}
+#workskin b.san-layer1{display:block!important;font-size:2.8em!important;font-weight:normal!important;font-family:"Yu Mincho","MS Mincho","CloisterBlack",serif!important;color:#aa0000!important;letter-spacing:-3px!important;line-height:0.9!important;text-shadow:2px 2px 0 #550000!important}
+#workskin i.san-layer2,#workskin b.san-layer2{display:block!important;font-size:2.8em!important;font-weight:normal!important;font-family:"Yu Mincho","MS Mincho",sans-serif!important;color:#ff3333!important;margin-top:-38px!important;margin-left:15px!important;transform:rotate(-3deg) skewX(-8deg)!important;opacity:0.85!important;text-shadow:0 0 5px #ff0000!important}
+#workskin dfn.san-layer3{display:block!important;font-style:normal!important;font-weight:normal!important;font-size:1.2em!important;font-family:"MS Gothic","SimSun","Courier New",monospace!important;color:#ff2222!important;margin-top:-22px!important;margin-left:-5px!important;letter-spacing:-1px!important;transform:rotate(1deg)!important}
+#workskin div.super-chaos-box{background-color:#000000!important;color:#ff0000!important;padding:40px 10px!important;overflow:hidden!important;font-family:"MS Gothic","SimSun",sans-serif!important;line-height:0.1!important}
+#workskin b.ultra-base{display:block!important;font-size:3.5em!important;font-weight:normal!important;color:#e60000!important;letter-spacing:-6px!important;line-height:0.2!important;text-shadow:none!important}
+#workskin dfn.ultra-mash{display:block!important;font-style:normal!important;font-weight:normal!important;font-size:1.5em!important;color:#ff0000!important;letter-spacing:-2px!important;line-height:0.8!important;text-shadow:none!important;margin-top:-38px!important;opacity:0.95!important}
+
+/* Readable source and decorative overlapping layers are kept separate. */
+#workskin .font-art{display:block;background-color:#000;color:#ff2222;padding:32px 14px;overflow:hidden;text-align:left;font-family:"MS Mincho","SimSun",serif}
+#workskin .font-art .font-original{display:none}
+#workskin .font-art .chaos-row{position:relative;min-height:110px;overflow:hidden;margin:0 0 8px}
+#workskin .font-art .chaos-main,#workskin .font-art .chaos-echo,#workskin .font-art .chaos-small,#workskin .font-art .chaos-cross{position:absolute;display:block;left:0;top:8px;width:115%;margin:0;padding:0;border:0;font-style:normal;font-weight:normal;overflow-wrap:anywhere}
+#workskin .font-art .chaos-main{font-size:2.8em;line-height:0.82;letter-spacing:-3px;color:#c90000;text-shadow:2px 2px #550000}
+#workskin .font-art .chaos-echo{top:23px;left:12px;font-size:2.8em;line-height:0.82;letter-spacing:-3px;color:#ff3333;transform:rotate(-3deg) skewX(-8deg);opacity:0.85;text-shadow:0 0 5px #ff0000}
+#workskin .font-art .chaos-small{top:65px;left:-3px;font-size:1.1em;line-height:0.9;letter-spacing:-1px;color:#ff4444;transform:rotate(1deg)}
+#workskin .font-dense .chaos-row{min-height:145px}
+#workskin .font-dense .chaos-main,#workskin .font-dense .chaos-echo{font-size:3.5em;letter-spacing:-6px;line-height:0.65;text-shadow:none}
+#workskin .font-dense .chaos-echo{top:19px;left:-8px;transform:rotate(-2deg) skewX(6deg)}
+#workskin .font-dense .chaos-small{top:57px;font-size:1.5em;letter-spacing:-2px;line-height:0.75}
+#workskin .font-art .chaos-cross{top:83px;left:5px;font-size:1.2em;line-height:0.75;letter-spacing:-2px;transform:rotate(2deg);color:#ed1919;opacity:0.9}
+
+/* A blank continuation area keeps object interactions independent of paging. */
+#workskin .game-container .story-step>summary.effect-advance{min-height:52px;width:100%;background:transparent;border:0;padding:0;margin:0;cursor:pointer}
+/* Natural row height and fewer copies prevent long text becoming a solid mass. */
+#workskin .font-art{padding:16px 10px;box-sizing:border-box;max-width:100%}
+#workskin .font-art .chaos-row{position:relative;display:block;min-height:0;height:auto;margin:0 0 16px;padding:8px 4px 44px;overflow:hidden}
+#workskin .font-art .chaos-main,#workskin .font-art .chaos-echo,#workskin .font-art .chaos-small,#workskin .font-art .chaos-cross{position:absolute;top:8px;left:4px;width:100%;min-width:0;overflow-wrap:anywhere;word-break:break-word;letter-spacing:-1px;line-height:1.15}
+#workskin .font-art .chaos-main{font-size:1.7em}
+#workskin .font-art .chaos-echo{font-size:1.65em;transform:translate(5px,9px) rotate(-2deg);opacity:0.65}
+#workskin .font-art .chaos-small{font-size:0.9em;transform:translate(0,24px);opacity:0.85}
+#workskin .font-dense .chaos-main{font-size:1.85em;line-height:1.15;letter-spacing:-1px}
+#workskin .font-dense .chaos-echo{font-size:1.8em;line-height:1.15;letter-spacing:-1px;transform:translate(-4px,12px) rotate(-2deg)}
+#workskin .font-dense .chaos-small{font-size:0.95em;line-height:1.2;letter-spacing:0;transform:translate(3px,28px)}
+#workskin .font-art .chaos-cross{font-size:0.95em;line-height:1.2;letter-spacing:0;transform:translate(-2px,42px);opacity:0.55}
+#workskin .letter-scene .font-art{font-size:14px;max-height:150px;overflow-y:auto;overflow-x:hidden}
+#workskin .journal-page .font-art{font-size:11px;max-height:130px;overflow-y:auto;overflow-x:hidden}
+#workskin .letter-scene details.stack-spoiler[open],#workskin .journal-page details.stack-spoiler[open]{padding:8px!important;margin:6px 0!important}
+
+/* The primary text establishes row height; echo layers overlap without Grid. */
+#workskin .font-art .chaos-main{position:relative;top:auto;left:auto}
+
+/* Horizontal music player: author-supplied song, cover and HTTPS audio URL. */
+#workskin .player-scene{width:100%;text-align:left}
+#workskin .ipod-nano-card{width:320px;max-width:100%;margin:20px auto;padding:16px;background-color:#dcdce1;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.12);font-family:Arial,sans-serif;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:10px}
+#workskin .ipod-nano-screen{position:relative;width:175px;max-width:65%;height:125px;border-radius:8px;border:2px solid #2c2c2e;overflow:hidden;box-sizing:border-box;background-color:#252b35}
+#workskin .ipod-nano-content{width:100%;height:100%;padding:8px;box-sizing:border-box}
+#workskin .ipod-nano-top{width:100%;height:48px;margin:0;padding:0}
+#workskin .ipod-square-cover{width:48px;height:48px;border-radius:4px;float:left;margin:0 8px 0 0}
+#workskin .ipod-empty-cover{display:block;background-color:#626876;color:#fff;text-align:center;font-size:25px}
+#workskin .ipod-nano-info{overflow:hidden;text-align:left;padding-top:2px}
+#workskin .ipod-nano-title{font-size:11px;font-weight:bold;color:#fff;line-height:1.2;margin:0 0 2px;padding:0;word-wrap:break-word}
+#workskin .ipod-nano-artist{font-size:9px;color:#ddd;line-height:1.2;margin:0;padding:0}
+#workskin .ipod-nano-audio{clear:both;width:100%;height:36px;display:block;margin:8px 0 0;padding:0;box-sizing:border-box}
+#workskin .ipod-nano-wheel{width:88px;height:88px;background-color:#f4f4f5;border-radius:50%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:space-around;color:#7c7c80;font-size:9px}
+#workskin .ipod-play{display:block;width:100%;margin:10px 0 0;padding:6px;border:1px solid #999;border-radius:4px;background-color:#eee;color:#333;cursor:pointer}
+#workskin .ipod-audio-empty{display:block;font-size:10px;color:#ddd;margin-top:10px}
+
+/* Story background choices also cover opened nested pages. */
+#workskin .game-container.theme-black,#workskin .game-container.theme-black .story-step[open]{background-color:#000;color:#eee}
+#workskin .game-container.theme-white,#workskin .game-container.theme-white .story-step[open]{background-color:#fff;color:#222}
+#workskin .game-container.theme-gray,#workskin .game-container.theme-gray .story-step[open]{background-color:#d3d3d3;color:#333}
+#workskin .effect-after-text{margin:20px 0;padding:0 20px 16px;color:inherit;line-height:1.8;word-wrap:break-word;text-align:left}
+/* Red overlapping text uses the paper or story background rather than a black box. */
+#workskin .font-art,#workskin .letter-scene .font-art,#workskin .journal-page .font-art{background-color:transparent;padding:4px;max-height:none;overflow:visible;box-sizing:border-box}
+#workskin details.stack-spoiler[open]{background-color:transparent!important}
+#workskin .font-art .chaos-row,#workskin .font-dense .chaos-row{min-height:0;height:auto;margin:0;padding:0 0 1em;overflow:visible}
+#workskin .font-art .chaos-main,#workskin .font-dense .chaos-main{position:relative;font-size:1.7em;line-height:1.15;letter-spacing:-1px;color:#e60000}
+#workskin .font-art .chaos-echo,#workskin .font-dense .chaos-echo{font-size:1.65em;line-height:1.15;letter-spacing:-1px;top:0;left:0;transform:translate(0.2em,0.3em) rotate(-2deg);color:#ff3333}
+#workskin .font-art .chaos-small,#workskin .font-dense .chaos-small{font-size:1em;line-height:1.2;top:0;left:0;transform:translate(0,0.6em);color:#ff2222}
+#workskin .font-art .chaos-cross{font-size:1em;line-height:1.2;top:0;left:0;transform:translate(0.1em,0.9em);color:#e60000}
+#workskin .letter-scene .font-in-paper{height:140px;max-height:140px;overflow:hidden}
+#workskin .journal-page .font-in-paper{height:150px;max-height:150px;overflow:hidden}
+#workskin .font-art.font-size-2{font-size:2px}
+#workskin .font-art.font-size-3{font-size:3px}
+#workskin .font-art.font-size-4{font-size:4px}
+#workskin .font-art.font-size-5{font-size:5px}
+#workskin .font-art.font-size-6{font-size:6px}
+#workskin .font-art.font-size-7{font-size:7px}
+#workskin .font-art.font-size-8{font-size:8px}
+#workskin .font-art.font-size-9{font-size:9px}
+#workskin .font-art.font-size-10{font-size:10px}
+#workskin .font-art.font-size-11{font-size:11px}
+#workskin .font-art.font-size-12{font-size:12px}
+#workskin .font-art.font-size-13{font-size:13px}
+#workskin .font-art.font-size-14{font-size:14px}
+#workskin .font-art.font-size-15{font-size:15px}
+#workskin .font-art.font-size-16{font-size:16px}
+#workskin .font-art.font-size-17{font-size:17px}
+#workskin .font-art.font-size-18{font-size:18px}
+#workskin .font-art.font-size-19{font-size:19px}
+#workskin .font-art.font-size-20{font-size:20px}
+#workskin .font-art.font-size-21{font-size:21px}
+#workskin .font-art.font-size-22{font-size:22px}
+#workskin .font-art.font-size-23{font-size:23px}
+#workskin .font-art.font-size-24{font-size:24px}
+#workskin .font-art.font-size-25{font-size:25px}
+#workskin .font-art.font-size-26{font-size:26px}
+#workskin .font-art.font-size-27{font-size:27px}
+#workskin .font-art.font-size-28{font-size:28px}
+#workskin .font-art.font-size-29{font-size:29px}
+#workskin .font-art.font-size-30{font-size:30px}
+#workskin .font-art.font-size-31{font-size:31px}
+#workskin .font-art.font-size-32{font-size:32px}
+#workskin .letter-scene .font-art.font-height-24,#workskin .journal-page .font-art.font-height-24{height:24px;max-height:24px}
+#workskin .letter-scene .font-art.font-height-32,#workskin .journal-page .font-art.font-height-32{height:32px;max-height:32px}
+#workskin .letter-scene .font-art.font-height-40,#workskin .journal-page .font-art.font-height-40{height:40px;max-height:40px}
+#workskin .letter-scene .font-art.font-height-48,#workskin .journal-page .font-art.font-height-48{height:48px;max-height:48px}
+#workskin .letter-scene .font-art.font-height-56,#workskin .journal-page .font-art.font-height-56{height:56px;max-height:56px}
+#workskin .letter-scene .font-art.font-height-64,#workskin .journal-page .font-art.font-height-64{height:64px;max-height:64px}
+#workskin .letter-scene .font-art.font-height-72,#workskin .journal-page .font-art.font-height-72{height:72px;max-height:72px}
+#workskin .letter-scene .font-art.font-height-80,#workskin .journal-page .font-art.font-height-80{height:80px;max-height:80px}
+#workskin .letter-scene .font-art.font-height-88,#workskin .journal-page .font-art.font-height-88{height:88px;max-height:88px}
+#workskin .letter-scene .font-art.font-height-96,#workskin .journal-page .font-art.font-height-96{height:96px;max-height:96px}
+#workskin .letter-scene .font-art.font-height-104,#workskin .journal-page .font-art.font-height-104{height:104px;max-height:104px}
+#workskin .letter-scene .font-art.font-height-112,#workskin .journal-page .font-art.font-height-112{height:112px;max-height:112px}
+#workskin .letter-scene .font-art.font-height-120,#workskin .journal-page .font-art.font-height-120{height:120px;max-height:120px}
+#workskin .letter-scene .font-art.font-height-128,#workskin .journal-page .font-art.font-height-128{height:128px;max-height:128px}
+#workskin .letter-scene .font-art.font-height-136,#workskin .journal-page .font-art.font-height-136{height:136px;max-height:136px}
+#workskin .letter-scene .font-art.font-height-144,#workskin .journal-page .font-art.font-height-144{height:144px;max-height:144px}
