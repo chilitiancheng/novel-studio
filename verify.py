@@ -10,7 +10,7 @@ for name in public_audio:
     data = (site / name).read_bytes()
     assert len(data) <= 10 * 1024 * 1024 and (data[:3] == b'ID3' or data[0] == 255), 'Invalid audio asset'
 css = (site / 'effects.css').read_text()
-assert not re.search(r'clip-path|gradient|scrollbar|(?:row-|column-)?gap\s*:|grid(?:-[a-z-]+)?\s*:|display\s*:\s*(?:inline-)?grid|(?:^|[;{])\s*font\s*:|background\s*:[^;}]*url\(', css, re.I)
+assert not re.search(r'clip-path|object-fit|gradient|scrollbar|(?:row-|column-)?gap\s*:|grid(?:-[a-z-]+)?\s*:|display\s*:\s*(?:inline-)?grid|(?:^|[;{])\s*font\s*:|background\s*:[^;}]*url\(', css, re.I)
 html = (site / 'index.html').read_text()
 assert 'id="workskin"' in html
 assert 'src="app.js"' in html and 'href="app.css"' in html
