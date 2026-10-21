@@ -110,3 +110,5 @@ main{width:100%;min-width:0}
 
 .graph-card-head{height:52px;gap:8px;padding:0 12px;justify-content:flex-start;font-size:13px}.graph-card-head>span:not(.drag-grip){flex:1}.graph-card-head .drag-grip{flex:none;font-size:22px;line-height:1;color:#819375;pointer-events:none}.graph-card-head span{pointer-events:none}
 .port-in{top:calc(-14px - 14px * var(--port-scale,1))}.port-out{bottom:calc(-14px - 14px * var(--port-scale,1))}
+
+.zip-report{margin:16px;padding:16px;border:1px solid #dce2d8;white-space:pre-wrap;overflow-wrap:break-word;font:13px/1.8 system-ui;color:#354238}.music-upload-status{font-size:12px;color:#667363;line-height:1.6}
