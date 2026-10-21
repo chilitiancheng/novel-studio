@@ -481,3 +481,8 @@
 
 /* AO3-compatible spacing for the player, without gap. */
 #workskin .ipod-nano-wheel{margin-left:10px;flex-shrink:0}
+
+/* Center the player in its story page; preserve authored text around it. */
+#workskin .game-container .player-page>.step-inner>.effect-page-content{display:flex;flex-direction:column;justify-content:center;flex:1;min-height:0}
+#workskin .game-container .player-page .player-scene{margin:auto 0}
+#workskin .ipod-play{font-size:20px;line-height:1.4;min-height:44px}
