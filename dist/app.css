@@ -118,3 +118,5 @@ main{width:100%;min-width:0}
 .text-style-note{display:block;font-size:11px;line-height:1.6;color:#778077;margin:8px 0 14px}.paper-surface .text-bold{font-weight:bold}.paper-surface .text-large{font-size:1.35em}.paper-surface .text-huge{font-size:1.7em}
 
 #workskin .text-bold{font-weight:bold}#workskin .text-large{font-size:1.35em}#workskin .text-huge{font-size:1.7em}
+
+.image-local-field{display:none}.picture-fields{padding:12px;background:#f4f5ef}.graph-effect-fields input[type=file]{max-width:100%;font-size:12px}.graph-effect-fields select{width:100%;padding:8px;border:1px solid #ddd;background:white}
