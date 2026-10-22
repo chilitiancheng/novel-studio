@@ -120,3 +120,5 @@ main{width:100%;min-width:0}
 #workskin .text-bold{font-weight:bold}#workskin .text-large{font-size:1.35em}#workskin .text-huge{font-size:1.7em}
 
 .image-local-field{display:none}.picture-fields{padding:12px;background:#f4f5ef}.graph-effect-fields input[type=file]{max-width:100%;font-size:12px}.graph-effect-fields select{width:100%;padding:8px;border:1px solid #ddd;background:white}
+
+.work-bar{display:flex;flex-wrap:wrap;align-items:center;padding:8px 0;border-bottom:1px solid #ddd}.work-bar label,.work-bar button,.work-bar details,.work-bar span{margin:4px}.work-bar select{max-width:260px;padding:9px;border:1px solid #ddd;border-radius:5px;background:white;color:inherit}.work-bar span{font-size:12px;color:#777}@media(max-width:600px){.work-bar select{max-width:180px}.work-bar{font-size:13px}}
