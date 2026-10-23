@@ -167,3 +167,5 @@ main{width:100%;min-width:0}
 
 .sms-canvas.sms-editor{background:#f3f2f7}
 .sms-canvas.sms-editor.is-night{background:#252628}
+
+.paper-surface .double-text:before{content:'已添加：双层文字';display:block;font:11px/1.6 system-ui;color:#55704e;margin-bottom:4px}.paper-surface .double-text.flash-return-front:before{content:'已添加：双层文字 · 屏闪'}.paper-surface .flash-overlay-copy{display:block;padding:6px;border-top:1px dotted #b9c4b2;font-size:13px}.paper-surface .flash-overlay-copy:before{content:'频闪文字：';color:#6c7f65;font-size:11px}
