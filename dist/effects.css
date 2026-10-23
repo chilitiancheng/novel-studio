@@ -793,8 +793,6 @@
 
 #workskin .polaroid-print-switch>summary{padding:0;border:0;border-radius:0;background:transparent}
 #workskin .polaroid-machine-bottom{display:block;padding:2px 22px 14px;border:1px solid #c3cccc;border-top:0;border-radius:0 0 9px 9px;background-color:#edf1f0}
-#workskin .polaroid-window{transition:max-height 2.8s linear,padding-bottom 2.8s linear}
-#workskin .polaroid-paper{transform:translateY(0);transition:transform .55s ease}
 
 /* A permanent handset shell; conversation length only changes the inner scroll. */
 #workskin .imessage{display:flex;flex-direction:column;position:relative;width:300px;max-width:100%;height:540px;min-height:540px;max-height:540px;margin:8px auto;padding:10px 0 12px;border:7px solid #303437;border-radius:34px;box-shadow:0 5px 14px rgba(0,0,0,.16);overflow:hidden}
