@@ -859,3 +859,10 @@
 #workskin .game-container .effect-page-content .journal-scene,#workskin .game-container .effect-page-content .printer-wrapper,#workskin .game-container .effect-page-content .polaroid-printer,#workskin .game-container .effect-page-content .imessage,#workskin .game-container .effect-page-content .train-ticket-box{position:relative;z-index:2}
 #workskin .game-container .effect-page-content .effect-after-text,#workskin .game-container .effect-page-content .player-scene>*{position:relative;z-index:2}
 #workskin .game-container .effect-page-content video,#workskin .game-container .effect-page-content .picture-scene img{position:relative;z-index:2}
+
+#workskin .flash-scene>.flash-overlay-copy{display:none}
+
+#workskin .flash-overlay-copy{display:none}
+
+#workskin .double-text.flash-return-front[open] .double-front{display:block}
+#workskin .double-text.flash-return-front[open] .double-back{display:none}
