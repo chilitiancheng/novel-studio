@@ -810,15 +810,15 @@
 #workskin .imessage .conv-header .conv-name{max-width:calc(100% - 54px)}
 
 /* Tall handset with separate, stationary conversation and input panels. */
-#workskin .imessage{width:320px;height:700px;min-height:700px;max-height:700px}
+#workskin .imessage{width:240px;height:525px;min-height:525px;max-height:525px}
 #workskin .imessage .statusbar{height:36px}
-#workskin .imessage .conv-header{height:38px;margin:44px 18px;border:0;border-radius:10px;padding:0;background-color:#e6e6eb}
+#workskin .imessage .conv-header{height:32px;margin:28px 12px;border:0;border-radius:10px;padding:0;background-color:#e6e6eb}
 #workskin .imessage .conv-header table.ch{height:100%}
 #workskin .imessage .conv-header .avatar{width:24px;height:24px;line-height:24px;vertical-align:middle}
 #workskin .imessage .conv-header .avatar img{max-width:100%;height:auto}
 #workskin .imessage .conv-header .conv-name{max-width:calc(100% - 34px);vertical-align:middle}
 #workskin .imessage .screen{margin:0 10px;padding:14px 10px;border-radius:14px;background-color:#fff}
-#workskin .imessage .composer{height:126px;margin:50px 10px 0;padding:14px;border:0;border-radius:14px;align-items:flex-end;background-color:#fff}
+#workskin .imessage .composer{height:90px;margin:32px 10px 0;padding:10px;border:0;border-radius:14px;align-items:flex-end;background-color:#fff}
 #workskin .imessage .composer .input{align-self:stretch;max-height:none;min-width:0;overflow-y:auto;border:0;border-radius:0;padding:0;background-color:transparent}
 #workskin .imessage.sms-night .screen,#workskin .imessage.sms-night .composer{background-color:#242426}
 #workskin .imessage.sms-night .conv-header{background-color:#343438}
