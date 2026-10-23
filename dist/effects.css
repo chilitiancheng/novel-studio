@@ -841,3 +841,21 @@
 #workskin .imessage .conv-header .avatar img{width:24px;height:24px;max-width:24px;margin:0;padding:0}
 #workskin .imessage .conv-header .conv-name{display:block;min-width:0;max-width:calc(100% - 30px);line-height:24px}
 #workskin .imessage .composer .send{display:flex;align-items:center;justify-content:center;line-height:1;padding:0}
+
+/* Native continuation covers page whitespace; actual objects remain above it. */
+#workskin .game-container .effect-page-content{z-index:auto;position:static}
+#workskin .game-container .effect-page>.step-inner>.story-step:not([open])>summary.effect-advance{position:static;min-height:120px}
+#workskin .game-container .effect-page>.step-inner>.story-step:not([open])>summary.effect-advance:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+#workskin .game-container .effect-page-content>.journal-scene,#workskin .game-container .effect-page-content>.printer-wrapper,#workskin .game-container .effect-page-content>.polaroid-printer,#workskin .game-container .effect-page-content>.imessage,#workskin .game-container .effect-page-content>.train-ticket-box,#workskin .game-container .effect-page-content>.receipt,#workskin .game-container .effect-page-content>.tear-ticket,#workskin .game-container .letter-scene>.trifold_letter,#workskin .game-container .player-scene>.record-player{position:relative;z-index:2}
+#workskin .game-container .effect-page-content>.player-scene{position:static}
+
+/* Native nested disclosures reveal one message per click on both platforms. */
+#workskin .imessage .screen{display:flex;flex-direction:column}
+#workskin .imessage .sms-reveal{display:flex;flex-direction:column;flex:1;min-height:40px;margin:0;padding:0;border:0;background:transparent;color:inherit}
+#workskin .imessage .sms-reveal>summary{display:flex;flex:1;align-items:flex-end;justify-content:center;min-height:40px;padding:8px 0;margin:0;border:0;list-style:none;cursor:pointer;color:#8e8e93;font-size:11px;line-height:1.5}
+#workskin .imessage .sms-reveal>summary::-webkit-details-marker{display:none}
+#workskin .imessage .sms-reveal[open]>summary{display:none}
+#workskin .imessage .sms-reveal>.message-bubble{flex:none}
+#workskin .game-container .effect-page-content .journal-scene,#workskin .game-container .effect-page-content .printer-wrapper,#workskin .game-container .effect-page-content .polaroid-printer,#workskin .game-container .effect-page-content .imessage,#workskin .game-container .effect-page-content .train-ticket-box{position:relative;z-index:2}
+#workskin .game-container .effect-page-content .effect-after-text,#workskin .game-container .effect-page-content .player-scene>*{position:relative;z-index:2}
+#workskin .game-container .effect-page-content video,#workskin .game-container .effect-page-content .picture-scene img{position:relative;z-index:2}
