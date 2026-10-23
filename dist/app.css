@@ -134,3 +134,6 @@ main{width:100%;min-width:0}
 /* Desktop uses the available screen width instead of a narrow article column. */
 @media(min-width:900px){main{max-width:none;width:100%;padding-left:clamp(20px,2.4vw,56px);padding-right:clamp(20px,2.4vw,56px)}.workspace,.workspace.graph-mode{grid-template-columns:minmax(0,1fr) 180px;column-gap:22px}.studio-navigation header{margin-bottom:4px}.studio-navigation .work-bar{padding:4px 0}.studio-navigation .chapter-bar{padding:6px 0}.generate-bar,.output,main.graph-layout .generate-bar,main.graph-layout .output{margin-right:202px}.workspace #graphViewport{height:calc(100vh - var(--studio-nav-height) - 94px);min-height:360px}.workspace #previewFrame{height:calc(100vh - var(--studio-nav-height) - 142px)!important;min-height:420px}.tool-category select{font-size:13px;padding:10px 8px}}
 @media(min-width:1600px){.workspace,.workspace.graph-mode{grid-template-columns:minmax(0,1fr) 200px;column-gap:24px}.generate-bar,.output,main.graph-layout .generate-bar,main.graph-layout .output{margin-right:224px}.studio-navigation .brand{font-size:28px}}
+
+/* Demonstration keeps a reading-sized viewport inside the wide authoring canvas. */
+.workspace #previewFrame{width:100%;max-width:854px;height:600px!important;min-height:0;margin:16px auto;box-shadow:0 0 0 1px #e6e9e2}
