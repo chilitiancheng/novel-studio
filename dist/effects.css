@@ -516,3 +516,9 @@
 #workskin .picture-right .story-picture{margin-left:auto;margin-right:0}
 #workskin .picture-caption{margin:14px 0;text-align:left;color:inherit}
 #workskin .picture-empty{padding:36px 16px;border:1px dashed #aaa;text-align:center;color:#777}
+
+/* Single-play GIF approximation for AO3; playback timing depends on the reader. */
+#workskin .flash-scene{position:relative;width:100%;min-height:180px;line-height:1.8;color:inherit}
+#workskin .flash-body{padding:24px 12px;color:inherit}
+#workskin .flash-optional-image{display:none}
+#workskin .flash-ao3-gif{position:absolute;top:0;left:0;width:100%;height:100%;z-index:2}
