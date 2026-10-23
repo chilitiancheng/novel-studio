@@ -825,3 +825,19 @@
 
 #workskin .imessage{background-color:#f3f2f7}
 #workskin .imessage.sms-night{background-color:#151515}
+
+/* Keep compact handset controls centered independently of text baselines. */
+#workskin .imessage .statusbar table.sb,#workskin .imessage .statusbar table.sb tbody{display:block;height:100%}
+#workskin .imessage .statusbar table.sb tr{display:flex;align-items:center;justify-content:space-between;height:100%}
+#workskin .imessage .statusbar .sb-ind{display:flex;align-items:center;line-height:1}
+#workskin .imessage .bars{display:inline-flex;align-items:flex-end;height:11px;margin-left:0}
+#workskin .imessage .battery{display:inline-flex;align-items:center;line-height:1}
+#workskin .imessage .conv-header table.ch,#workskin .imessage .conv-header table.ch tbody{display:block;width:100%;height:100%}
+#workskin .imessage .conv-header table.ch tr{display:flex;align-items:center;width:100%;height:100%}
+#workskin .imessage .conv-header .ch-chev,#workskin .imessage .conv-header .ch-info{display:flex;flex:none;align-items:center;justify-content:center;width:24px;height:100%;line-height:1}
+#workskin .imessage .conv-header .ch-mid{display:flex;flex:1;min-width:0;align-items:center;justify-content:center;height:100%;line-height:1.2}
+#workskin .imessage .conv-header .avatar{display:block;flex:none;width:24px;height:24px;margin-right:6px;line-height:24px}
+#workskin .imessage .conv-header .avatar .initial{font-size:14px;line-height:24px;height:24px}
+#workskin .imessage .conv-header .avatar img{width:24px;height:24px;max-width:24px;margin:0;padding:0}
+#workskin .imessage .conv-header .conv-name{display:block;min-width:0;max-width:calc(100% - 30px);line-height:24px}
+#workskin .imessage .composer .send{display:flex;align-items:center;justify-content:center;line-height:1;padding:0}
