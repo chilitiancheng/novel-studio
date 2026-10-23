@@ -156,3 +156,14 @@ main{width:100%;min-width:0}
 .sms-canvas.sms-editor{position:relative;width:300px;max-width:100%;height:540px;max-height:540px;overflow-y:auto;margin:0 auto;border:7px solid #303437;border-radius:32px;padding:12px;background:#f9faf7;box-shadow:0 4px 10px #0001}.sms-canvas .sms-canvas-heading{position:sticky;top:-12px;z-index:1;margin-top:-12px;padding-top:14px;background:#f9faf7}.sms-canvas.is-night .sms-canvas-heading{background:#252628;color:#eee}
 
 .sms-canvas.sms-editor.is-night{background:#252628;color:#eee}
+
+.sms-canvas.sms-editor{display:flex;flex-direction:column;width:320px;height:700px;max-height:700px;overflow:hidden;padding:10px 0 12px;background:#f9faf7;box-sizing:border-box}
+.sms-canvas-status{flex:none;height:36px;padding:5px 16px;font-size:13px;font-weight:600}
+.sms-canvas .sms-canvas-heading{position:static;flex:none;height:38px;min-height:38px;box-sizing:border-box;margin:44px 18px;padding:8px;border:0;border-radius:10px;background:#e6e6eb;font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sms-canvas-conversation{flex:1;min-height:0;margin:0 10px;padding:14px 10px;border-radius:14px;background:#fff;overflow-y:auto;overflow-x:hidden}
+.sms-canvas-composer{flex:none;box-sizing:border-box;height:126px;margin:50px 10px 0;padding:14px;border-radius:14px;background:#fff;color:#888;overflow-y:auto;overflow-wrap:anywhere;font-size:14px}
+.sms-canvas.is-night .sms-canvas-conversation,.sms-canvas.is-night .sms-canvas-composer{background:#242426}
+.sms-canvas.is-night .sms-canvas-heading{background:#343438}
+
+.sms-canvas.sms-editor{background:#f3f2f7}
+.sms-canvas.sms-editor.is-night{background:#252628}
