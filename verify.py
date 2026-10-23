@@ -32,6 +32,6 @@ css = (site / 'effects.css').read_text()
 assert not re.search(r'clip-path|object-fit|gradient|scrollbar|(?:row-|column-)?gap\s*:|grid(?:-[a-z-]+)?\s*:|display\s*:\s*(?:inline-)?grid|(?:^|[;{])\s*font\s*:|background\s*:[^;}]*url\(', css, re.I)
 html = (site / 'index.html').read_text()
 assert 'id="workskin"' in html
-assert 'src="app.js"' in html and 'href="app.css"' in html
+assert re.search(r'src="app\.js(?:\?[^"]*)?"', html) and re.search(r'href="app\.css(?:\?[^"]*)?"', html)
 assert not re.search(r'白乌山|何明烁|我在雪山尽头', ''.join((site / name).read_text() for name in expected))
 print('PASS: public application only; private manuscript excluded; exported CSS restrictions checked')
