@@ -727,3 +727,18 @@
 #workskin .imessage.sms-night .message-bubble.them{background-color:#363638;color:#fff}
 #workskin .imessage.sms-night .composer .input{background-color:#151515;border-color:#555;color:#aaa}
 #workskin .imessage.sms-night .composer .input.has{color:#fff}
+
+/* Native details switches two independently authored text layers on both platforms. */
+#workskin details.double-text{display:block;margin:8px 0;padding:0;border:0;background:transparent;color:inherit}
+#workskin details.double-text>summary{display:block;padding:0;margin:0;list-style:none;cursor:pointer;color:inherit}
+#workskin details.double-text>summary::-webkit-details-marker{display:none}
+#workskin .double-text .double-front{display:block}
+#workskin .double-text .double-back{display:none}
+#workskin .double-text[open] .double-front{display:none}
+#workskin .double-text[open] .double-back{display:block}
+#workskin .font-art .chaos-whisper,#workskin .font-art .chaos-shout{position:absolute;display:block;top:0;left:0;width:100%;margin:0;padding:0;border:0;font-style:normal;font-weight:normal;overflow-wrap:anywhere;line-height:1.15;color:#ff2222}
+#workskin .font-art .chaos-whisper{font-size:.75em;transform:translate(.15em,.8em) rotate(1deg);opacity:.95}
+#workskin .font-art .chaos-shout{font-size:2.5em;transform:translate(-.12em,.2em) rotate(-1deg);opacity:.7}
+#workskin .font-art.font-uniform .chaos-main,#workskin .font-art.font-uniform .chaos-echo,#workskin .font-art.font-uniform .chaos-small,#workskin .font-art.font-uniform .chaos-cross,#workskin .font-art.font-uniform .chaos-whisper,#workskin .font-art.font-uniform .chaos-shout{font-size:1.7em}
+
+#workskin .font-art .chaos-whisper.chaos-tuck,#workskin .font-art .chaos-shout.chaos-tuck{transform:rotate(0deg)}
