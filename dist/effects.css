@@ -742,3 +742,56 @@
 #workskin .font-art.font-uniform .chaos-main,#workskin .font-art.font-uniform .chaos-echo,#workskin .font-art.font-uniform .chaos-small,#workskin .font-art.font-uniform .chaos-cross,#workskin .font-art.font-uniform .chaos-whisper,#workskin .font-art.font-uniform .chaos-shout{font-size:1.7em}
 
 #workskin .font-art .chaos-whisper.chaos-tuck,#workskin .font-art .chaos-shout.chaos-tuck{transform:rotate(0deg)}
+
+/* Airmail trim covers the whole envelope; paper and opening behavior stay independent. */
+#workskin .letter-scene .letter_cover{background-color:#f8f5e5;border:1px solid #c5bfaa;border-radius:3px;overflow:hidden}
+#workskin .letter-scene .letter-switch[open]>.letter_cover{background-color:#f8f5e5}
+#workskin .letter-scene .airmail-edge{position:absolute;display:block;overflow:hidden;font-size:0;line-height:0}
+#workskin .letter-scene .mail-top,#workskin .letter-scene .mail-bottom{left:0;width:100%;height:14px;white-space:nowrap}
+#workskin .letter-scene .mail-top{top:0}
+#workskin .letter-scene .mail-bottom{bottom:0}
+#workskin .letter-scene .mail-left,#workskin .letter-scene .mail-right{top:0;width:14px;height:100%}
+#workskin .letter-scene .mail-left{left:0}
+#workskin .letter-scene .mail-right{right:0}
+#workskin .letter-scene .airmail-edge i{display:inline-block;width:3%;height:25px;margin-right:2%;transform:skew(35deg)}
+#workskin .letter-scene .mail-left i,#workskin .letter-scene .mail-right i{display:block;width:24px;height:14px;margin:0 0 10px;transform:skewY(35deg)}
+#workskin .letter-scene .mail-red{background-color:#c93635}
+#workskin .letter-scene .mail-blue{background-color:#21496c}
+#workskin .letter-scene .letter_cover_text_top{top:30px;left:30px}
+#workskin .letter-scene .letter_cover_text{top:90px}
+#workskin .letter-scene .letter_cover_stamp{top:28px;right:28px;width:54px;height:62px;background-image:none;background-color:transparent;border:1px dashed #bbb39b}
+
+/* Instant photo printer: a clipped paper sheet travels from top to bottom. */
+#workskin .polaroid-printer{width:320px;max-width:100%;margin:28px auto;color:#3b4141;text-align:left;font-family:Georgia,serif}
+#workskin .polaroid-machine-top{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:14px 22px 9px;border:1px solid #c3cccc;border-bottom:0;border-radius:12px 12px 0 0;background-color:#edf1f0}
+#workskin .polaroid-light{display:block;width:7px;height:7px;border-radius:50%;background-color:#7fa48f}
+#workskin .polaroid-machine-brand{font-size:9px;letter-spacing:3px;color:#86938d}
+#workskin .polaroid-print-switch{border:0;margin:0;padding:0;background:transparent}
+#workskin .polaroid-print-switch>summary{display:block;list-style:none;padding:2px 22px 14px;cursor:pointer;border:1px solid #c3cccc;border-top:0;border-radius:0 0 9px 9px;background-color:#edf1f0}
+#workskin .polaroid-slot{display:block;height:8px;background-color:#303938;border:1px solid #1d2421;border-radius:4px}
+#workskin .polaroid-window{display:block;width:84%;max-width:260px;max-height:0;overflow:hidden;margin:-4px auto 0;padding:0;border:0;background:transparent}
+#workskin .polaroid-paper{display:block;position:relative;width:100%;height:394px;margin:0;padding:0;list-style:none;cursor:pointer;transform:translateY(-110%);transition:transform 2.8s linear}
+#workskin .polaroid-print-switch>summary::-webkit-details-marker,#workskin .polaroid-window>summary::-webkit-details-marker{display:none}
+#workskin .polaroid-print-switch[open]~.polaroid-window,#workskin .polaroid-window[open]{max-height:420px;padding-bottom:18px}
+#workskin .polaroid-print-switch[open]~.polaroid-window>.polaroid-paper{transform:translateY(0)}
+#workskin .polaroid-front,#workskin .polaroid-back{display:block;width:100%;height:394px;padding:15px 14px 12px;box-sizing:border-box;border:1px solid #d6dcda;border-radius:3px 4px 7px 4px;background-color:#fbfcf9;box-shadow:0 5px 8px rgba(0,0,0,.14)}
+#workskin .polaroid-image-frame{display:flex;align-items:center;justify-content:center;width:100%;height:280px;background-color:#f0f1ed;overflow:hidden}
+#workskin .polaroid-image-frame img{display:block;width:auto;height:auto;max-width:100%;max-height:100%}
+#workskin .polaroid-empty{font-size:12px;color:#8e9891}
+#workskin .polaroid-caption{display:block;width:100%;height:78px;padding:12px 4px 0;overflow-y:auto;overflow-x:hidden;font-size:15px;line-height:1.7;text-align:center;word-wrap:break-word}
+#workskin .polaroid-caption p,#workskin .polaroid-back p{margin:0 0 8px;color:inherit}
+#workskin .polaroid-back{display:none;background-color:#f3f1e7;transform:rotateY(180deg)}
+#workskin .polaroid-back-copy{display:block;height:100%;padding:12px 8px;overflow-y:auto;overflow-x:hidden;font-size:16px;line-height:1.8;word-wrap:break-word}
+#workskin .polaroid-window[open]>.polaroid-paper{transform:translateY(0) rotateY(180deg);transition:transform .55s ease}
+#workskin .polaroid-window[open] .polaroid-front{display:none}
+#workskin .polaroid-window[open] .polaroid-back{display:block}
+@media (hover:hover) and (pointer:fine){
+#workskin .polaroid-printer:hover>.polaroid-window{max-height:420px;padding-bottom:18px}
+#workskin .polaroid-printer:hover>.polaroid-window>.polaroid-paper{transform:translateY(0)}
+#workskin .polaroid-printer:hover>.polaroid-window[open]>.polaroid-paper{transform:translateY(0) rotateY(180deg)}
+}
+
+#workskin .polaroid-print-switch>summary{padding:0;border:0;border-radius:0;background:transparent}
+#workskin .polaroid-machine-bottom{display:block;padding:2px 22px 14px;border:1px solid #c3cccc;border-top:0;border-radius:0 0 9px 9px;background-color:#edf1f0}
+#workskin .polaroid-window{transition:max-height 2.8s linear,padding-bottom 2.8s linear}
+#workskin .polaroid-paper{transform:translateY(0);transition:transform .55s ease}
