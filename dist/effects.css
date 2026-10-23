@@ -522,3 +522,6 @@
 #workskin .flash-body{padding:24px 12px;color:inherit}
 #workskin .flash-optional-image{display:none}
 #workskin .flash-ao3-gif{position:absolute;top:0;left:0;width:100%;height:100%;z-index:2}
+
+#workskin .video-scene{width:100%;margin:20px auto;color:inherit}
+#workskin .story-video{display:block;width:100%;max-width:100%;height:auto}
