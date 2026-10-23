@@ -795,3 +795,18 @@
 #workskin .polaroid-machine-bottom{display:block;padding:2px 22px 14px;border:1px solid #c3cccc;border-top:0;border-radius:0 0 9px 9px;background-color:#edf1f0}
 #workskin .polaroid-window{transition:max-height 2.8s linear,padding-bottom 2.8s linear}
 #workskin .polaroid-paper{transform:translateY(0);transition:transform .55s ease}
+
+/* A permanent handset shell; conversation length only changes the inner scroll. */
+#workskin .imessage{display:flex;flex-direction:column;position:relative;width:300px;max-width:100%;height:540px;min-height:540px;max-height:540px;margin:8px auto;padding:10px 0 12px;border:7px solid #303437;border-radius:34px;box-shadow:0 5px 14px rgba(0,0,0,.16);overflow:hidden}
+#workskin .imessage:before{content:"";position:absolute;top:3px;left:50%;width:44px;height:4px;transform:translateX(-50%);border-radius:4px;background-color:#303437}
+#workskin .imessage:after{content:"";position:absolute;bottom:4px;left:50%;width:72px;height:3px;transform:translateX(-50%);border-radius:3px;background-color:#92969a}
+#workskin .imessage .statusbar{flex:none;height:30px;overflow:hidden}
+#workskin .imessage .conv-header{flex:none;height:68px;overflow:hidden}
+#workskin .imessage .screen{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden}
+#workskin .imessage .composer{flex:none;height:62px;overflow:hidden}
+#workskin .imessage .composer .input{max-height:44px;overflow-y:auto}
+#workskin .imessage .conv-header table.ch{table-layout:fixed}
+#workskin .imessage .conv-header .conv-name{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:320px){#workskin .imessage{height:440px;min-height:440px;max-height:440px}}
+
+#workskin .imessage .conv-header .conv-name{max-width:calc(100% - 54px)}
