@@ -1050,3 +1050,5 @@
 #workskin .font-scatter>.scatter-slot-h2{left:12.64637%;top:72.16667%;font-size:4.888889em;transform:rotate(-3deg);z-index:3;}
 
 #workskin .story-ending{min-height:180px}#workskin .story-ending-actions{margin:35px auto 10px;text-align:center}#workskin .story-ending-return{display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:4px;background:transparent;color:inherit;font-size:14px;line-height:1.6;text-decoration:none;cursor:pointer}
+
+#workskin .explore-progress,#workskin .explore-help{font-size:13px;line-height:1.7;margin:16px auto;color:inherit}#workskin .explore-done{font-size:12px;font-weight:normal}#workskin .explore-return-page{text-align:center;min-height:180px}#workskin .explore-ao3-route{margin:14px auto;border:1px solid currentColor;padding:10px;width:90%}#workskin .explore-ao3-route>summary{display:block;cursor:pointer}#workskin .explore-ao3-copy{text-align:left;padding:12px;line-height:1.8}
