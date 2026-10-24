@@ -1048,3 +1048,5 @@
 #workskin .font-scatter>.scatter-slot-h0{left:-9.48478%;top:7.00000%;font-size:4.666667em;transform:rotate(-5deg);z-index:3;}
 #workskin .font-scatter>.scatter-slot-h1{left:49.76581%;top:42.16667%;font-size:4.555556em;transform:rotate(4deg);z-index:3;}
 #workskin .font-scatter>.scatter-slot-h2{left:12.64637%;top:72.16667%;font-size:4.888889em;transform:rotate(-3deg);z-index:3;}
+
+#workskin .story-ending{min-height:180px}#workskin .story-ending-actions{margin:35px auto 10px;text-align:center}#workskin .story-ending-return{display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:4px;background:transparent;color:inherit;font-size:14px;line-height:1.6;text-decoration:none;cursor:pointer}
