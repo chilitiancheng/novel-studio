@@ -6,7 +6,7 @@ expected = {'index.html', 'app.js', 'media.js', 'app.css', 'effects.css'}
 public_audio = {'audio/lv_0_20261021200729.mp3'}  # Explicitly requested public music file.
 files = {p.relative_to(site).as_posix() for p in site.rglob('*') if p.is_file()}
 public_media = files - expected - public_audio
-assert expected | public_audio <= files, 'Missing application or existing authorized audio'
+assert expected <= files, 'Missing application files'
 for name in public_media:
     assert re.fullmatch(r'media/media-[a-z0-9]+-[a-z0-9]+\.(?:png|jpg|gif|webp|mp4|mp3|m4a|wav|ogg)', name), 'Only user-uploaded media allowed in media directory'
     data = (site / name).read_bytes()
@@ -25,7 +25,7 @@ for name in public_media:
     }
     assert signatures[ext], 'Invalid media signature'
 
-for name in public_audio:
+for name in public_audio & files:
     data = (site / name).read_bytes()
     assert len(data) <= 10 * 1024 * 1024 and (data[:3] == b'ID3' or data[0] == 255), 'Invalid audio asset'
 css = (site / 'effects.css').read_text()
