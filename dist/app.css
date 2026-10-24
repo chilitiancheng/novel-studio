@@ -192,3 +192,5 @@ body.media-studio-open{overflow:hidden}#mediaStudio{position:fixed;top:16px;bott
 #appliedEffects{padding:12px 0;border-bottom:1px solid #dce2d8;margin-bottom:12px}#appliedEffects>strong{font-size:13px;color:#436651}#appliedEffects small{display:block;font-size:11px;line-height:1.6;color:#788375;margin-top:6px}.applied-effect-row{display:flex;flex-wrap:wrap;align-items:center;padding:9px 0;border-bottom:1px dotted #ddd}.applied-effect-row>span{width:100%;font-size:12px;line-height:1.7;overflow-wrap:anywhere}.applied-effect-row>button{font-size:12px;padding:5px 10px;margin:4px 6px 0 0}
 
 #storyFlagSettings{padding:12px 0;border-bottom:1px solid #ddd;font-size:12px}#storyFlagSettings label{display:block;margin:10px 0}#storyFlagSettings input,#storyFlagSettings select{display:block;width:100%;min-width:0;padding:8px;margin-top:5px;border:1px solid #dce2d8;border-radius:4px}#storyFlagSettings small{display:block;color:#788375;line-height:1.7}
+
+.page-sound-editor select{display:block;width:100%;min-width:0;margin-top:6px;padding:9px;border:1px solid #d9dfd5;border-radius:4px;background:white;color:inherit}
