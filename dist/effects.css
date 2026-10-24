@@ -994,3 +994,57 @@
 #workskin .font-expanded.font-uniform .chaos-whisper{top:45%}
 
 #workskin .font-expanded .chaos-row>*{text-align:center}
+
+/* Approved normal/dense scatter layouts; original text remains separately editable. */
+#workskin .font-art.font-scatter{position:relative;height:400px;padding:0;overflow:hidden;max-width:100%;line-height:1.13;text-align:left;font-family:"Noto Serif CJK SC","Songti SC","MS Mincho",serif}
+#workskin .font-scatter>.scatter-thread{position:absolute;display:block;margin:0;padding:0;border:0;font-weight:normal;font-style:normal;line-height:1.13;letter-spacing:-.0556em;color:#ed1616;white-space:nowrap}
+#workskin .font-scatter>.scatter-secondary{color:#b70b0b;opacity:.8}
+#workskin .font-scatter>.scatter-fine{line-height:1.2;letter-spacing:0;color:#e01a1a;opacity:.82;white-space:normal}
+#workskin .font-scatter>.scatter-hero{color:#f31d1d;letter-spacing:-.2222em;opacity:.81}
+#workskin .font-scatter.font-packed>.scatter-thread{letter-spacing:-.0778em}
+#workskin .font-scatter.font-packed>.scatter-hero{letter-spacing:-.2222em;opacity:.84}
+#workskin .font-scatter.font-packed>.scatter-secondary{color:#d11313;opacity:.86}
+#workskin .game-container .text-content.font-page-text{padding:0;margin:auto;flex:none;text-align:center}
+#workskin .game-container .font-scatter.font-page-fill{height:600px;max-height:none;width:100%}
+@media(max-width:600px){#workskin .font-scatter.font-size-18{font-size:10px}}
+@media(max-width:400px){#workskin .font-scatter.font-size-18{font-size:8px}}
+#workskin .font-scatter>.scatter-slot-b0{left:-14.05152%;top:-3.00000%;font-size:2.388889em;transform:rotate(-4deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-b1{left:35.71429%;top:2.83333%;font-size:1.777778em;transform:rotate(5deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b2{left:8.89930%;top:11.16667%;font-size:2.055556em;transform:rotate(-3deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b3{left:57.37705%;top:15.33333%;font-size:1.611111em;transform:rotate(7deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-b4{left:-11.24122%;top:21.50000%;font-size:1.888889em;transform:rotate(4deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b5{left:24.70726%;top:27.00000%;font-size:2.166667em;transform:rotate(-6deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b6{left:63.11475%;top:31.16667%;font-size:1.777778em;transform:rotate(4deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-b7{left:-5.97190%;top:36.83333%;font-size:2.055556em;transform:rotate(-3deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b8{left:40.39813%;top:41.83333%;font-size:1.888889em;transform:rotate(6deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b9{left:10.88993%;top:46.66667%;font-size:1.666667em;transform:rotate(-6deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-b10{left:68.73536%;top:52.16667%;font-size:2.166667em;transform:rotate(-4deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b11{left:-16.39344%;top:58.00000%;font-size:1.944444em;transform:rotate(5deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b12{left:26.22951%;top:63.00000%;font-size:2.111111em;transform:rotate(-4deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-b13{left:57.96253%;top:69.33333%;font-size:1.722222em;transform:rotate(7deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b14{left:-7.49415%;top:75.33333%;font-size:2.166667em;transform:rotate(-3deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b15{left:37.00234%;top:81.00000%;font-size:1.888889em;transform:rotate(5deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-b16{left:6.79157%;top:88.66667%;font-size:2.055556em;transform:rotate(-4deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-b17{left:62.64637%;top:95.66667%;font-size:2.222222em;transform:rotate(4deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e0{left:1.99063%;top:5.16667%;font-size:1.611111em;transform:rotate(7deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-e1{left:-11.12412%;top:16.16667%;font-size:1.777778em;transform:rotate(-5deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e2{left:43.09133%;top:22.50000%;font-size:1.888889em;transform:rotate(4deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e3{left:3.98126%;top:31.66667%;font-size:1.722222em;transform:rotate(-7deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-e4{left:59.95316%;top:38.83333%;font-size:1.611111em;transform:rotate(5deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e5{left:-13.46604%;top:49.33333%;font-size:1.833333em;transform:rotate(6deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e6{left:26.34660%;top:54.33333%;font-size:1.944444em;transform:rotate(-5deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-e7{left:55.85480%;top:60.50000%;font-size:1.666667em;transform:rotate(-7deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e8{left:2.34192%;top:67.33333%;font-size:1.722222em;transform:rotate(7deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e9{left:45.19906%;top:76.16667%;font-size:1.611111em;transform:rotate(-4deg);z-index:2;}
+#workskin .font-scatter>.scatter-slot-e10{left:-7.25995%;top:84.00000%;font-size:1.888889em;transform:rotate(5deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-e11{left:31.61593%;top:92.83333%;font-size:1.777778em;transform:rotate(-5deg);z-index:1;}
+#workskin .font-scatter>.scatter-slot-f0{left:34.66042%;top:12.16667%;font-size:1.166667em;transform:rotate(-3deg);z-index:2;width:43.32553%;}
+#workskin .font-scatter>.scatter-slot-f1{left:9.01639%;top:30.16667%;font-size:1.166667em;transform:rotate(4deg);z-index:2;width:53.86417%;}
+#workskin .font-scatter>.scatter-slot-f2{left:48.24356%;top:35.83333%;font-size:1.166667em;transform:rotate(-5deg);z-index:2;width:45.66745%;}
+#workskin .font-scatter>.scatter-slot-f3{left:10.65574%;top:53.83333%;font-size:1.166667em;transform:rotate(3deg);z-index:2;width:46.83841%;}
+#workskin .font-scatter>.scatter-slot-f4{left:45.43326%;top:65.50000%;font-size:1.166667em;transform:rotate(-3deg);z-index:2;width:43.91101%;}
+#workskin .font-scatter>.scatter-slot-f5{left:1.87354%;top:84.33333%;font-size:1.166667em;transform:rotate(4deg);z-index:2;width:45.66745%;}
+#workskin .font-scatter>.scatter-slot-f6{left:53.62998%;top:88.16667%;font-size:1.166667em;transform:rotate(-4deg);z-index:2;width:43.91101%;}
+#workskin .font-scatter>.scatter-slot-h0{left:-9.48478%;top:7.00000%;font-size:4.666667em;transform:rotate(-5deg);z-index:3;}
+#workskin .font-scatter>.scatter-slot-h1{left:49.76581%;top:42.16667%;font-size:4.555556em;transform:rotate(4deg);z-index:3;}
+#workskin .font-scatter>.scatter-slot-h2{left:12.64637%;top:72.16667%;font-size:4.888889em;transform:rotate(-3deg);z-index:3;}
