@@ -1069,3 +1069,25 @@
 #workskin .train-ticket-box.ticket-red br{display:inline !important}
 #workskin .ticket-red-stamp{margin-left:auto}
 #workskin .ticket-red-footer{margin-right:12px}
+
+/* Reveal covers contrast with dark scenes; opening still reveals the red text. */
+#workskin .theme-black details.inline-spoiler:not([open])>summary,
+#workskin .theme-black details.spoiler-text:not([open])>summary,
+#workskin .imessage.sms-night details.inline-spoiler:not([open])>summary,
+#workskin .imessage.sms-night details.spoiler-text:not([open])>summary{background-color:#ffffff !important;color:#ffffff !important;text-shadow:none !important}
+#workskin .letter-scene details.inline-spoiler:not([open])>summary,
+#workskin .letter-scene details.spoiler-text:not([open])>summary,
+#workskin .journal-scene details.inline-spoiler:not([open])>summary,
+#workskin .journal-scene details.spoiler-text:not([open])>summary,
+#workskin .printer-wrapper details.inline-spoiler:not([open])>summary,
+#workskin .printer-wrapper details.spoiler-text:not([open])>summary,
+#workskin .train-ticket-box details.inline-spoiler:not([open])>summary,
+#workskin .train-ticket-box details.spoiler-text:not([open])>summary,
+#workskin .polaroid-printer details.inline-spoiler:not([open])>summary,
+#workskin .polaroid-printer details.spoiler-text:not([open])>summary,
+#workskin .imessage:not(.sms-night) details.inline-spoiler:not([open])>summary,
+#workskin .imessage:not(.sms-night) details.spoiler-text:not([open])>summary{background-color:#000000 !important;color:#000000 !important;text-shadow:none !important}
+
+#workskin details.inline-spoiler:not([open])>summary *,#workskin details.spoiler-text:not([open])>summary *{color:inherit !important;background-color:transparent !important;text-shadow:none !important}
+
+#workskin .step-text.explore-terminal{display:none !important}
