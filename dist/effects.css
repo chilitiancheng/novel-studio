@@ -883,8 +883,8 @@
 #workskin .font-expanded.font-airy .chaos-cross{opacity:.12}
 #workskin .font-expanded.font-packed .chaos-row>*{letter-spacing:-2px;opacity:.85}
 #workskin .font-expanded.font-packed .chaos-shout{opacity:.65}
-#workskin .game-container .text-content.font-page-text{padding:16px;margin:0;flex:1;width:100%;text-align:left}
-#workskin .game-container .font-page-fill{height:568px;max-height:none;width:100%}
+#workskin .game-container .text-content.font-page-text{padding:16px;margin:auto;flex:none;width:100%;text-align:center}
+#workskin .game-container .font-page-fill{height:400px;max-height:none;width:100%}
 
 #workskin .font-expanded .chaos-share-1{height:100.0%}
 #workskin .font-expanded .chaos-share-2{height:50.0%}
@@ -992,3 +992,5 @@
 #workskin .font-expanded.font-uniform .chaos-small{top:30%}
 #workskin .font-expanded.font-uniform .chaos-cross{top:18%}
 #workskin .font-expanded.font-uniform .chaos-whisper{top:45%}
+
+#workskin .font-expanded .chaos-row>*{text-align:center}
