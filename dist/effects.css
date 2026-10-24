@@ -1091,3 +1091,75 @@
 #workskin details.inline-spoiler:not([open])>summary *,#workskin details.spoiler-text:not([open])>summary *{color:inherit !important;background-color:transparent !important;text-shadow:none !important}
 
 #workskin .step-text.explore-terminal{display:none !important}
+
+/* Password pages have their own guarded continuation, with no blank-page advance. */
+#workskin .password-gate{width:100%;max-width:360px;margin:auto;text-align:center;overflow-wrap:break-word}
+#workskin .password-form{margin:26px auto 0;max-width:300px}
+#workskin .password-form label{display:block;font-size:14px;line-height:1.7}
+#workskin .password-input{display:block;width:100%;box-sizing:border-box;padding:10px 12px;margin:10px 0 14px;border:1px solid currentColor;border-radius:5px;background:transparent;color:inherit;font-family:inherit;font-size:16px;line-height:1.6}
+#workskin .password-form button{padding:9px 24px;border:1px solid currentColor;border-radius:5px;background:transparent;color:inherit;font-size:14px;cursor:pointer}
+#workskin .password-status{min-height:24px;margin:12px auto;font-size:13px;line-height:1.7}
+#workskin .password-help{font-size:13px;line-height:1.7;margin:20px auto}
+#workskin .password-gate .password-next[hidden],#workskin .password-form[hidden]{display:none !important}
+#workskin .password-answer{margin:20px auto;font-size:14px}
+#workskin .password-answer>summary{cursor:pointer}
+/* Retain the fixed phone shell while giving the conversation more space. */
+#workskin .imessage{font-size:12px;line-height:1.5}
+#workskin .imessage .statusbar{height:28px;font-size:10px}
+#workskin .imessage .statusbar .sb-time,#workskin .imessage .statusbar .bat-pct{font-size:10px}
+#workskin .imessage .conv-header{height:30px;margin:16px 10px;border-radius:9px}
+#workskin .imessage .conv-header .avatar,#workskin .imessage .conv-header .avatar img{width:18px;height:18px;max-width:18px;line-height:18px}
+#workskin .imessage .conv-header .avatar .initial{font-size:11px;height:18px;line-height:18px}
+#workskin .imessage .conv-header .conv-name{font-size:12px;line-height:18px;font-weight:normal}
+#workskin .imessage .conv-header .ch-chev,#workskin .imessage .conv-header .ch-info{font-size:20px;width:22px}
+#workskin .imessage .screen{padding:10px 8px}
+#workskin .imessage .message-bubble{padding:6px 9px;margin-bottom:7px;font-size:12px;line-height:1.55;font-weight:normal;max-width:88%}
+#workskin .imessage .sms-message-copy{font-size:12px;line-height:1.55;font-weight:normal}
+#workskin .imessage .message-bubble .meta{font-size:9px;line-height:1.4;margin-top:3px;font-weight:normal}
+#workskin .imessage .message-bubble.typing{padding:6px 9px}
+#workskin .imessage .message-bubble.typing .dot{width:5px;height:5px;margin:0 2px}
+#workskin .imessage .composer{height:54px;margin:14px 10px 0;padding:10px;align-items:center}
+#workskin .imessage .composer .input,#workskin .imessage.sms-night .composer .input{font-size:12px;line-height:1.5;max-height:34px;background-color:transparent;border:0}
+#workskin .imessage .composer .send{width:24px;height:24px;font-size:18px}
+
+/* Minimal conversation UI: one continuous canvas and a slim composer. */
+#workskin .imessage{border:3px solid #d8dce1;border-radius:24px;background-color:#fff;padding:10px 0 12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+#workskin .imessage:before{width:32px;height:3px;top:4px;background-color:#aab0b7}
+#workskin .imessage:after{height:2px;bottom:4px;background-color:#aab0b7}
+#workskin .imessage.sms-night{background-color:#111214;border-color:#34363b;color:#f2f2f5}
+#workskin .imessage .statusbar,#workskin .imessage.sms-night .statusbar{background-color:transparent}
+#workskin .imessage .conv-header,#workskin .imessage.sms-night .conv-header{height:74px;margin:6px 14px 8px;padding:0;background-color:transparent;border:0;border-radius:0}
+#workskin .imessage .conv-header .ch-mid{flex-direction:column;justify-content:center}
+#workskin .imessage .conv-header .avatar{width:32px;height:32px;line-height:32px;margin:0 0 5px;background-color:#8ba5cc}
+#workskin .imessage .conv-header .avatar img{width:32px;height:32px;max-width:32px}
+#workskin .imessage .conv-header .avatar .initial{font-size:16px;font-weight:normal;line-height:32px;height:32px}
+#workskin .imessage .conv-header .conv-name{max-width:100%;padding:3px 9px;border-radius:12px;font-size:11px;line-height:16px;font-weight:normal;background-color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+#workskin .imessage .conv-header .conv-name:after{content:" ›";color:#9b9da3}
+#workskin .imessage .conv-header .conv-name:empty{display:none}
+#workskin .imessage .conv-header .ch-chev,#workskin .imessage .conv-header .ch-info{width:27px;height:27px;background-color:#fff;border-radius:50%;color:#202124;box-shadow:0 2px 8px rgba(0,0,0,.08);font-weight:normal}
+#workskin .imessage.sms-night .conv-header .ch-chev,#workskin .imessage.sms-night .conv-header .ch-info,#workskin .imessage.sms-night .conv-header .conv-name{background-color:#222428;color:#eee}
+#workskin .imessage .sms-camera{display:block;position:relative;width:11px;height:8px;border-radius:2px;background-color:currentColor;margin-right:3px}
+#workskin .imessage .sms-camera:after{content:"";position:absolute;left:10px;top:1px;width:0;height:0;border-top:3px solid transparent;border-bottom:3px solid transparent;border-right:4px solid currentColor}
+#workskin .imessage .screen,#workskin .imessage.sms-night .screen{margin:0;padding:8px 14px;background-color:transparent;border-radius:0}
+#workskin .imessage .message-bubble{position:relative;max-width:86%;margin-top:0;margin-bottom:9px;padding:6px 9px;font-size:12px;line-height:1.55}
+#workskin .imessage .message-bubble.them{background-color:#e9e9ed}
+#workskin .imessage.sms-night .message-bubble.them{background-color:#303236;color:#f2f2f5}
+#workskin .imessage .message-bubble:after{content:"";position:absolute;bottom:0;width:8px;height:8px;background-color:inherit}
+#workskin .imessage .message-bubble.them:after{left:-3px;border-radius:0 0 7px 0;transform:skewX(-25deg)}
+#workskin .imessage .message-bubble.you:after{right:-3px;border-radius:0 0 0 7px;transform:skewX(25deg)}
+#workskin .imessage .composer,#workskin .imessage.sms-night .composer{position:relative;height:52px;margin:10px 10px 0;padding:6px 0;align-items:center;background-color:transparent;border:0;border-radius:0}
+#workskin .imessage .sms-compose-plus{display:block;flex:none;width:26px;height:26px;margin-right:7px;border-radius:50%;line-height:24px;text-align:center;font-size:21px;font-weight:normal;background-color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+#workskin .imessage .composer .input,#workskin .imessage.sms-night .composer .input{display:block;align-self:auto;height:34px;min-height:34px;max-height:34px;padding:7px 30px 7px 11px;border:1px solid #eef0f3;border-radius:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#fff;font-size:11px;line-height:18px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+#workskin .imessage .composer .send{position:absolute;right:5px;top:50%;transform:translateY(-50%);width:24px;height:24px;margin:0;background-color:transparent;color:#93989f}
+#workskin .imessage .composer.has-draft .send{background-color:#2486f5;color:#fff}
+#workskin .imessage.sms-night .sms-compose-plus,#workskin .imessage.sms-night .composer .input{background-color:#222428;border-color:#303236;color:#eee}
+#workskin .imessage .sms-mic{display:block;position:relative;width:6px;height:11px;border:1px solid currentColor;border-radius:4px}
+#workskin .imessage .sms-mic:after{content:"";position:absolute;left:-3px;bottom:-4px;width:10px;height:9px;border:1px solid currentColor;border-top:0;border-radius:0 0 7px 7px}
+
+#workskin .imessage .conv-header .avatar{min-width:32px;max-width:32px}
+
+#workskin .imessage .composer:not(.has-draft) .send{background-color:transparent}
+#workskin .imessage.sms-theme-green .composer.has-draft .send{background-color:#248a3d}
+#workskin .imessage.sms-theme-gray .composer.has-draft .send{background-color:#55565c}
+
+#workskin .imessage.sms-night .statusbar .sb-time{color:#f2f2f5}
