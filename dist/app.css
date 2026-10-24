@@ -188,3 +188,5 @@ body.media-studio-open{overflow:hidden}#mediaStudio{position:fixed;top:16px;bott
 .file-menu-items>button+button{margin-top:4px!important}
 
 .work-bar .file-menu>.file-menu-items,.chapter-bar .file-menu>.file-menu-items{left:0;right:auto}
+
+#appliedEffects{padding:12px 0;border-bottom:1px solid #dce2d8;margin-bottom:12px}#appliedEffects>strong{font-size:13px;color:#436651}#appliedEffects small{display:block;font-size:11px;line-height:1.6;color:#788375;margin-top:6px}.applied-effect-row{display:flex;flex-wrap:wrap;align-items:center;padding:9px 0;border-bottom:1px dotted #ddd}.applied-effect-row>span{width:100%;font-size:12px;line-height:1.7;overflow-wrap:anywhere}.applied-effect-row>button{font-size:12px;padding:5px 10px;margin:4px 6px 0 0}
