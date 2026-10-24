@@ -1052,3 +1052,20 @@
 #workskin .story-ending{min-height:180px}#workskin .story-ending-actions{margin:35px auto 10px;text-align:center}#workskin .story-ending-return{display:inline-block;padding:10px 14px;border:1px solid currentColor;border-radius:4px;background:transparent;color:inherit;font-size:14px;line-height:1.6;text-decoration:none;cursor:pointer}
 
 #workskin .explore-progress,#workskin .explore-help{font-size:13px;line-height:1.7;margin:16px auto;color:inherit}#workskin .explore-done{font-size:12px;font-weight:normal}#workskin .explore-return-page{text-align:center;min-height:180px}#workskin .explore-ao3-route{margin:14px auto;border:1px solid currentColor;padding:10px;width:90%}#workskin .explore-ao3-route>summary{display:block;cursor:pointer}#workskin .explore-ao3-copy{text-align:left;padding:12px;line-height:1.8}
+
+/* Optional red ticket. All original ticket selectors and defaults remain intact. */
+#workskin .train-ticket-box.ticket-red{width:440px;max-width:100%;margin:20px auto;padding-bottom:40px;font-family:inherit;color:#fff1db;align-items:stretch}
+#workskin .ticket-red .ticket-main-body{display:flex;flex-direction:column;flex:1;min-width:0;width:auto;height:280px;padding:22px 18px;background-color:#a83c3b;border:1px solid #642125;border-right:2px dashed #552025;border-radius:10px 0 0 10px;box-shadow:-2px 4px 10px rgba(0,0,0,0.15)}
+#workskin .ticket-red .ticket-main-body:before{content:"";position:absolute;top:9px;right:9px;bottom:9px;left:9px;border:1px solid #f3d3b4;border-radius:7px;pointer-events:none}
+#workskin .ticket-red-title{position:relative;flex-shrink:0;font-size:1.3em;font-weight:normal;line-height:1.5;text-align:center;padding:0 0 10px;margin:0 0 12px;border-bottom:1px solid #ecc5a5;overflow-wrap:break-word}
+#workskin .ticket-red .ticket-main-text{position:relative;flex:1;min-height:0;height:auto;font-family:inherit;font-size:1em;line-height:1.7;color:inherit;overflow-wrap:break-word}
+#workskin .ticket-red-bottom{position:relative;display:flex;align-items:flex-end;justify-content:space-between;flex-shrink:0;margin-top:12px;max-height:90px;overflow:auto}
+#workskin .ticket-red-footer{font-size:12px;line-height:1.6;overflow-wrap:break-word;min-width:0;flex:1}
+#workskin .ticket-red-stamp{display:block;padding:3px 7px;margin:5px 4px 5px 12px;border:2px solid #f3d3b4;border-radius:3px;font-size:16px;line-height:1.4;transform:rotate(-7deg);overflow-wrap:break-word;max-width:45%}
+#workskin .ticket-red .ticket-stub{position:relative;width:66px;height:280px;background-color:#852b31;border:1px solid #642125;border-left:0;border-radius:0 10px 10px 0;box-shadow:3px 4px 10px rgba(0,0,0,0.15)}
+#workskin .ticket-red .ticket-stub:before{content:"";position:absolute;top:9px;right:9px;bottom:9px;left:9px;border:1px solid #f3d3b4;border-radius:0 6px 6px 0;pointer-events:none}
+#workskin .ticket-red .ticket-stub span{position:relative;display:block;writing-mode:horizontal-tb;white-space:nowrap;transform:rotate(90deg);font-family:"Brush Script MT","Segoe Script","Snell Roundhand","Apple Chancery",cursive;font-size:28px;font-weight:normal;font-style:italic;letter-spacing:0;line-height:1.2;padding:0;border:0;color:#fff1db}
+
+#workskin .train-ticket-box.ticket-red br{display:inline !important}
+#workskin .ticket-red-stamp{margin-left:auto}
+#workskin .ticket-red-footer{margin-right:12px}
