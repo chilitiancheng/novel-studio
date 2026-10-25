@@ -198,3 +198,12 @@ body.media-studio-open{overflow:hidden}#mediaStudio{position:fixed;top:16px;bott
 /* Authoring reveals the clue for editing; exported readers retain click-to-reveal. */
 .paper-surface details.inline-spoiler>summary,.paper-surface details.spoiler-text>summary,#editingPaper #workskin details.inline-spoiler>summary,#editingPaper #workskin details.spoiler-text>summary{display:inline!important;background:#e9ece5!important;color:#a52020!important;text-shadow:none!important;cursor:text!important;border-bottom:1px dashed #85947b}
 .preview-bar{flex-wrap:wrap}.preview-bar label{display:flex;align-items:center;flex-wrap:wrap}.preview-bar select{max-width:260px;margin:4px 8px;padding:6px;border:1px solid #dce3d6;background:white;border-radius:4px;font:inherit}.view-tabs{flex-wrap:wrap}.document-bar{height:auto;min-height:53px}
+
+/* Persistent controls remain alongside the view tabs when either panel is folded. */
+.workspace-visibility{display:flex;flex-wrap:wrap;margin-left:auto;align-items:center}.workspace-visibility button{font-size:11px;padding:5px 8px;color:#61735a;white-space:nowrap}
+.document-bar{flex-wrap:wrap;gap:6px}.document-bar .history{margin-left:6px}
+body.studio-navigation-collapsed .studio-navigation{display:none}
+body.studio-tools-collapsed .workspace,body.studio-tools-collapsed .workspace.graph-mode,body.studio-tools-collapsed .workspace.inspector-open,body.studio-tools-collapsed .workspace.text-editor-open{grid-template-columns:minmax(0,1fr);column-gap:0}
+body.studio-tools-collapsed .workspace aside{display:none!important}
+body.studio-tools-collapsed .generate-bar,body.studio-tools-collapsed .output,body.studio-tools-collapsed main.graph-layout .generate-bar,body.studio-tools-collapsed main.graph-layout .output{margin-right:0}
+@media(max-width:650px){.workspace-visibility{margin-left:0}.workspace-visibility button{padding:4px 7px}.document-bar .history{margin-left:auto}}
