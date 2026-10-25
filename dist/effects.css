@@ -1172,4 +1172,4 @@
 #workskin .game-container .flash-page>.step-inner>.story-step:not([open])>summary.effect-advance{flex:0;min-height:0;height:0;font-size:0;line-height:0}
 
 /* Persistent photo underneath the independent, transient flash layer. */
-#workskin .flash-base-image{display:block;width:auto;max-width:100%;max-height:400px;height:auto;margin:0 auto 16px}
+#workskin .flash-base-image{display:block;max-width:100%;height:auto;margin:0 auto 16px}
