@@ -1167,6 +1167,9 @@
 /* Flash pages retain the same centered body layout as ordinary story pages. */
 #workskin .game-container .flash-page>.step-inner>.effect-page-content{display:flex;flex-direction:column;justify-content:center;flex:1;text-align:center}
 #workskin .flash-scene{display:flex;flex-direction:column;justify-content:center;text-align:center}
-#workskin .flash-body{width:100%;text-align:center}
+#workskin .flash-body{width:100%;box-sizing:border-box;text-align:center}
 #workskin .game-container .flash-page>.step-inner>.story-step:not([open]){flex:0;min-height:0;height:0}
 #workskin .game-container .flash-page>.step-inner>.story-step:not([open])>summary.effect-advance{flex:0;min-height:0;height:0;font-size:0;line-height:0}
+
+/* Persistent photo underneath the independent, transient flash layer. */
+#workskin .flash-base-image{display:block;width:auto;max-width:100%;max-height:400px;height:auto;margin:0 auto 16px}
