@@ -1163,3 +1163,10 @@
 #workskin .imessage.sms-theme-gray .composer.has-draft .send{background-color:#55565c}
 
 #workskin .imessage.sms-night .statusbar .sb-time{color:#f2f2f5}
+
+/* Flash pages retain the same centered body layout as ordinary story pages. */
+#workskin .game-container .flash-page>.step-inner>.effect-page-content{display:flex;flex-direction:column;justify-content:center;flex:1;text-align:center}
+#workskin .flash-scene{display:flex;flex-direction:column;justify-content:center;text-align:center}
+#workskin .flash-body{width:100%;text-align:center}
+#workskin .game-container .flash-page>.step-inner>.story-step:not([open]){flex:0;min-height:0;height:0}
+#workskin .game-container .flash-page>.step-inner>.story-step:not([open])>summary.effect-advance{flex:0;min-height:0;height:0;font-size:0;line-height:0}
