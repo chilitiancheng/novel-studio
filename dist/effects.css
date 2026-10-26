@@ -1184,3 +1184,10 @@
 #workskin .game-container .step-text.page-pos-top > .step-inner > .text-content,#workskin .game-container .step-text.page-pos-top > .step-inner > .fork-content,#workskin .game-container .step-text.page-pos-top > .step-inner > .effect-page-content{margin-top:0;margin-bottom:auto;flex:0 0 auto}
 #workskin .game-container .step-text.page-pos-center > .step-inner > .text-content,#workskin .game-container .step-text.page-pos-center > .step-inner > .fork-content,#workskin .game-container .step-text.page-pos-center > .step-inner > .effect-page-content{margin-top:auto;margin-bottom:auto;flex:0 0 auto}
 #workskin .game-container .step-text.page-pos-bottom > .step-inner > .text-content,#workskin .game-container .step-text.page-pos-bottom > .step-inner > .fork-content,#workskin .game-container .step-text.page-pos-bottom > .step-inner > .effect-page-content{margin-top:auto;margin-bottom:0;flex:0 0 auto}
+/* Option covers reveal independently before the actual branch is selected. */
+#workskin .game-container .choice-label-mask{margin:0;padding:0;border:0}
+#workskin .game-container .choice-label-mask>summary{list-style:none}
+#workskin .game-container .choice-label-mask[open]>summary{display:none}
+#workskin .game-container .choice-label-mask:not([open])+details>summary{display:none}
+#workskin .choice-label-cover{background-color:#111111;color:#111111;border-radius:2px;padding:0 3px}
+#workskin .choice-label-cover *{color:inherit;background-color:transparent}
