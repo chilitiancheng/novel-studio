@@ -1191,3 +1191,8 @@
 #workskin .game-container .choice-label-mask:not([open])+details>summary{display:none}
 #workskin .choice-label-cover{background-color:#111111;color:#111111;border-radius:2px;padding:0 3px}
 #workskin .choice-label-cover *{color:inherit;background-color:transparent}
+
+/* Picture captions follow explicit page alignment without moving the image. */
+#workskin .game-container .step-text.page-text-left > .step-inner > .effect-page-content .picture-caption{text-align:left}
+#workskin .game-container .step-text.page-text-center > .step-inner > .effect-page-content .picture-caption{text-align:center}
+#workskin .game-container .step-text.page-text-right > .step-inner > .effect-page-content .picture-caption{text-align:right}
