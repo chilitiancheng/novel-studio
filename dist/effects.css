@@ -774,23 +774,19 @@
 #workskin .polaroid-print-switch>summary::-webkit-details-marker,#workskin .polaroid-window>summary::-webkit-details-marker{display:none}
 #workskin .polaroid-print-switch[open]~.polaroid-window,#workskin .polaroid-window[open]{max-height:420px;padding-bottom:18px}
 #workskin .polaroid-print-switch[open]~.polaroid-window>.polaroid-paper{transform:translateY(0)}
-#workskin .polaroid-front,#workskin .polaroid-back{display:block;position:absolute;top:0;left:0;width:100%;height:394px;padding:15px 14px 12px;box-sizing:border-box;border:1px solid #d6dcda;border-radius:3px 4px 7px 4px;background-color:#fbfcf9;box-shadow:0 5px 8px rgba(0,0,0,.14);transition:transform .55s ease-in-out,opacity 0s linear .275s}
-#workskin .polaroid-front{transform:rotateY(0);opacity:1}
+#workskin .polaroid-front,#workskin .polaroid-back{display:block;position:absolute;top:0;left:0;width:100%;height:394px;padding:15px 14px 12px;box-sizing:border-box;border:1px solid #d6dcda;border-radius:3px 4px 7px 4px;background-color:#fbfcf9;box-shadow:0 5px 8px rgba(0,0,0,.14);transition:transform .28s ease-in,opacity 0s linear .28s}
+#workskin .polaroid-front{transform:scaleX(1);opacity:1;transition:transform .28s ease-out .28s,opacity 0s linear .28s}
 #workskin .polaroid-image-frame{display:flex;align-items:center;justify-content:center;width:100%;height:280px;background-color:#f0f1ed;overflow:hidden}
 #workskin .polaroid-image-frame img{display:block;width:auto;height:auto;max-width:100%;max-height:100%}
 #workskin .polaroid-empty{font-size:12px;color:#8e9891}
 #workskin .polaroid-caption{display:block;width:100%;height:78px;padding:12px 4px 0;overflow-y:auto;overflow-x:hidden;font-size:15px;line-height:1.7;text-align:center;word-wrap:break-word}
 #workskin .polaroid-caption p,#workskin .polaroid-back p{margin:0 0 8px;color:inherit}
-#workskin .polaroid-back{background-color:#f3f1e7;transform:rotateY(-180deg);opacity:0}
+#workskin .polaroid-back{background-color:#f3f1e7;transform:scaleX(0);opacity:0}
 #workskin .polaroid-back-copy{display:block;height:100%;padding:12px 8px;overflow-y:auto;overflow-x:hidden;font-size:16px;line-height:1.8;word-wrap:break-word}
 #workskin .polaroid-window[open]>.polaroid-paper{transform:translateY(0)}
-#workskin .polaroid-window[open] .polaroid-front{transform:rotateY(180deg);opacity:0}
-#workskin .polaroid-window[open] .polaroid-back{transform:rotateY(0);opacity:1}
-@media (hover:hover) and (pointer:fine){
-#workskin .polaroid-printer:hover>.polaroid-window{max-height:420px;padding-bottom:18px}
-#workskin .polaroid-printer:hover>.polaroid-window>.polaroid-paper{transform:translateY(0)}
-#workskin .polaroid-printer:hover>.polaroid-window[open]>.polaroid-paper{transform:translateY(0)}
-}
+#workskin .polaroid-window[open] .polaroid-front{transform:scaleX(0);opacity:0;transition:transform .28s ease-in,opacity 0s linear .28s}
+#workskin .polaroid-window[open] .polaroid-back{transform:scaleX(1);opacity:1;transition:transform .28s ease-out .28s,opacity 0s linear .28s}
+
 
 #workskin .polaroid-print-switch>summary{padding:0;border:0;border-radius:0;background:transparent}
 #workskin .polaroid-machine-bottom{display:block;padding:2px 22px 14px;border:1px solid #c3cccc;border-top:0;border-radius:0 0 9px 9px;background-color:#edf1f0}
