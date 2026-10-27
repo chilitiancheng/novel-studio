@@ -1196,3 +1196,14 @@
 #workskin .game-container .step-text.page-text-left > .step-inner > .effect-page-content .picture-caption{text-align:left}
 #workskin .game-container .step-text.page-text-center > .step-inner > .effect-page-content .picture-caption{text-align:center}
 #workskin .game-container .step-text.page-text-right > .step-inner > .effect-page-content .picture-caption{text-align:right}
+
+/* Inline blur: native details toggle works without JavaScript. */
+#workskin .main-text{font-size:110%}
+#workskin .blur-1 > summary{filter:blur(3px);opacity:.85}
+#workskin .blur-2 > summary{filter:blur(5px);opacity:.65}
+#workskin .blur-3 > summary{filter:blur(7px);opacity:.45}
+#workskin .details-inline-blur[open] > summary{filter:none!important;opacity:1!important}
+#workskin .details-inline-blur{display:inline!important;margin:0!important;padding:0!important;border:none!important}
+#workskin .details-inline-blur > summary{display:inline!important;cursor:pointer;list-style:none;outline:none}
+#workskin .details-inline-blur > summary::-webkit-details-marker,#workskin .details-inline-blur > summary::marker{display:none;content:""}
+#workskin .blur-paragraph{margin-bottom:1.2em}
