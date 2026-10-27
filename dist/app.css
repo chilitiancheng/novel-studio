@@ -225,3 +225,6 @@ body.studio-tools-collapsed .generate-bar,body.studio-tools-collapsed .output,bo
 .paper-surface .details-inline-blur>summary,#editor .details-inline-blur>summary{filter:none!important;opacity:1!important}
 .blur-settings{margin:12px 0;padding:12px 0;border-top:1px solid #dce3d6}.blur-settings select{max-width:100%}
 
+
+/* Author-only route simulation; exported readers keep their actual saved flags. */
+.preview-flag-picker{position:relative;font-size:13px;max-width:100%}.preview-flag-picker summary{cursor:pointer;max-width:300px;overflow-wrap:anywhere}.preview-flag-picker[open]{padding:8px;border:1px solid #d5ddcf;border-radius:6px;background:#fff}.preview-flag-picker #previewFlags{max-height:180px;overflow-y:auto}.preview-flag-picker #previewFlags label{display:flex;align-items:center;margin:6px 0;overflow-wrap:anywhere}.preview-flag-picker input{margin-right:7px}.preview-flag-picker small{display:block;color:#697562;margin-top:8px}
