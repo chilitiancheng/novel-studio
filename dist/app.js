@@ -8,7 +8,8 @@ const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&q
 const paragraphs=t=>t.split(/\n\s*\n/).filter(x=>x.trim()).map(x=>'<p>'+esc(x).replace(/\n/g,'<br>')+'</p>').join('');
 const slot=h=>`<div data-editable="true" contenteditable="true">${h||'<p><br></p>'}</div>`;
 const wrap=(cls,h)=>`<div class="widget ${cls}" contenteditable="false" data-widget="${cls}">${h}</div>`;
-function notice(s){$('status').textContent=s;}
+let statusNoticeTimer=0;
+function notice(s){const label=$('status'),bar=label.parentElement;label.textContent=s;clearTimeout(statusNoticeTimer);const important=/无法|失败|错误|请先|请选择|不支持|不能|尚未|失效/.test(s);bar.classList.toggle('status-alert',important);if(important)statusNoticeTimer=setTimeout(()=>bar.classList.remove('status-alert'),6500);}
 const DRAFT_KEY='paper-studio-document-v4', BACKUP_KEY='paper-studio-backup-v4';
 let lastBackupAt=0;
 let draftDatabase,indexedReadFailed=false;
@@ -492,7 +493,7 @@ $('downloadCSS').onclick=()=>download('纸间-通用.css',css,'text/css');
 $('downloadChapter').onclick=()=>{if(generate()===false)return;download((book.chapters.find(c=>c.id===book.active).title||'章节').replace(/[\\/:*?"<>|]/g,'-')+'.html',$('htmlOutput').value,'text/html');};
 (async()=>{
 let localDocument=readStored(DRAFT_KEY)||readStored(BACKUP_KEY),indexedDocument=await readIndexedDraft();if(!localDocument&&!indexedDocument){localDocument=readStored('paper-studio-document-v3')||readStored('paper-studio-backup-v3')||readStored('paper-studio-document-v2')||readStored('paper-studio-backup-v2')||readStored('paper-studio-document-v1')||readStored('paper-studio-backup-v1');indexedDocument=await readIndexedDraft('paper-studio-document-v3');}const savedDocument=indexedDocument&&(!localDocument||Date.parse(indexedDocument.savedAt)>Date.parse(localDocument.savedAt||'1970-01-01'))?indexedDocument:localDocument;if(savedDocument){restoreMusicAssets(savedDocument.assets);restoreImageAssets(savedDocument.images);const migrated=migrateEditor(sanitizeDocument(savedDocument.html));editor.innerHTML=migrated.html;applySettings({...savedDocument.settings,storyFull:savedDocument.editorVersion>=2?savedDocument.settings.storyFull:migrated.interactive});}else{try{const migrated=migrateEditor(sanitizeDocument(localStorage.getItem('paper-studio-v1')||editor.innerHTML||''));editor.innerHTML=migrated.html;$('storyFull').checked=migrated.interactive;}catch{editor.innerHTML='';}}
-initBook(savedDocument);initializeWorks(savedDocument);document.body.classList.remove('preview');editor.hidden=false;$('rawDocument').hidden=true;$('outputPanel').hidden=true;setEditable();checkpoint();const embeddedCSS=$('effects').textContent;(embeddedCSS?Promise.resolve(embeddedCSS):fetch('effects.css?v=113').then(r=>r.text())).then(t=>{css=t;$('effects').textContent=t;showView('graph');$('startupStatus').hidden=true;}).catch(error=>{showView('original');$('startupStatus').textContent='工作台启动未完成，已切换到正文编辑。请先保存草稿。'+error.message;});
+initBook(savedDocument);initializeWorks(savedDocument);document.body.classList.remove('preview');editor.hidden=false;$('rawDocument').hidden=true;$('outputPanel').hidden=true;setEditable();checkpoint();const embeddedCSS=$('effects').textContent;(embeddedCSS?Promise.resolve(embeddedCSS):fetch('effects.css?v=114').then(r=>r.text())).then(t=>{css=t;$('effects').textContent=t;showView('graph');$('startupStatus').hidden=true;}).catch(error=>{showView('original');$('startupStatus').textContent='工作台启动未完成，已切换到正文编辑。请先保存草稿。'+error.message;});
 
 window.addEventListener('resize',()=>{if(graphView){applyGraphZoom(Math.min(graphZoom,Math.max(.25,($('graphViewport').clientWidth-12)/(GRAPH_WIDTH+60))),false);}});
 
