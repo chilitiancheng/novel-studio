@@ -225,5 +225,3 @@ body.studio-tools-collapsed .generate-bar,body.studio-tools-collapsed .output,bo
 .paper-surface .details-inline-blur>summary,#editor .details-inline-blur>summary{filter:none!important;opacity:1!important}
 .blur-settings{margin:12px 0;padding:12px 0;border-top:1px solid #dce3d6}.blur-settings select{max-width:100%}
 
-/* Reader preview uses the available device space rather than a fixed 854×600 frame. */
-.workspace #previewFrame{max-width:none;height:calc(100vh - var(--studio-nav-height) - 142px)!important;min-height:260px;margin:0 auto}
