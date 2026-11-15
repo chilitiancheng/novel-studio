@@ -2017,3 +2017,14 @@
 
 #workskin .polaroid-window:not([open]) .polaroid-back *{pointer-events:none!important}
 #workskin .polaroid-window[open] .polaroid-front *{pointer-events:none!important}
+
+/* AO3 simple export: native click reveal, no automatic flashing or scripts. */
+#workskin .ao3-flash-reveal{display:block;width:100%;margin:18px auto;padding:0;border:0;color:inherit}
+#workskin .ao3-flash-reveal>summary{display:block;list-style:none;cursor:pointer}
+#workskin .ao3-flash-panel{display:block;position:relative;width:100%;padding:24px 18px;text-align:center;overflow:hidden;line-height:1.8;box-sizing:border-box}
+#workskin .ao3-flash-red{background:#ff0000}#workskin .ao3-flash-blue{background:#0000ff}#workskin .ao3-flash-green{background:#00ff00}#workskin .ao3-flash-white{background:#ffffff}#workskin .ao3-flash-black{background:#000000}
+#workskin .ao3-flash-image{display:block;max-width:100%;height:auto;margin:0 auto}
+#workskin .ao3-flash-copy{display:block;position:relative;white-space:normal;word-wrap:break-word;font-size:20px;line-height:1.8}
+#workskin .ao3-ink-white{color:#ffffff}#workskin .ao3-ink-black{color:#000000}#workskin .ao3-ink-red{color:#ff0000}
+#workskin .ao3-flash-copy .font-art{color:inherit}#workskin .ao3-flash-color-pad{display:block;min-height:140px}
+#workskin .game-container .effect-page-content .ao3-flash-reveal{position:relative;z-index:2}
