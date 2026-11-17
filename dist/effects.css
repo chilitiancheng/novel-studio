@@ -774,8 +774,8 @@
 #workskin .polaroid-print-switch>summary::-webkit-details-marker,#workskin .polaroid-window>summary::-webkit-details-marker{display:none}
 #workskin .polaroid-print-switch[open]~.polaroid-window,#workskin .polaroid-window[open]{max-height:420px;padding-bottom:18px}
 #workskin .polaroid-print-switch[open]~.polaroid-window>.polaroid-paper{transform:translateY(0)}
-#workskin .polaroid-front,#workskin .polaroid-back{display:block;position:absolute;top:0;left:0;width:100%;height:394px;padding:15px 14px 12px;box-sizing:border-box;border:1px solid #d6dcda;border-radius:3px 4px 7px 4px;background-color:#fbfcf9;box-shadow:0 5px 8px rgba(0,0,0,.14);transition:transform .28s ease-in,opacity 0s linear .28s}
-#workskin .polaroid-front{transform:scaleX(1);opacity:1;transition:transform .28s ease-out .28s,opacity 0s linear .28s}
+#workskin .polaroid-front,#workskin .polaroid-back{display:block;position:absolute;top:0;left:0;width:100%;height:394px;padding:15px 14px 12px;box-sizing:border-box;border:1px solid #d6dcda;border-radius:3px 4px 7px 4px;background-color:#fbfcf9;box-shadow:0 5px 8px rgba(0,0,0,.14);transition:transform .28s ease-in,opacity 0s linear .28s,visibility 0s linear .28s}
+#workskin .polaroid-front{transform:scaleX(1);opacity:1;transition:transform .28s ease-out .28s,opacity 0s linear .28s,visibility 0s linear .28s}
 #workskin .polaroid-image-frame{display:flex;align-items:center;justify-content:center;width:100%;height:280px;background-color:#f0f1ed;overflow:hidden}
 #workskin .polaroid-image-frame img{display:block;width:auto;height:auto;max-width:100%;max-height:100%}
 #workskin .polaroid-empty{font-size:12px;color:#8e9891}
@@ -784,8 +784,8 @@
 #workskin .polaroid-back{background-color:#f3f1e7;transform:scaleX(0);opacity:0}
 #workskin .polaroid-back-copy{display:block;height:100%;padding:12px 8px;overflow-y:auto;overflow-x:hidden;font-size:16px;line-height:1.8;word-wrap:break-word}
 #workskin .polaroid-window[open]>.polaroid-paper{transform:translateY(0)}
-#workskin .polaroid-window[open] .polaroid-front{transform:scaleX(0);opacity:0;transition:transform .28s ease-in,opacity 0s linear .28s}
-#workskin .polaroid-window[open] .polaroid-back{transform:scaleX(1);opacity:1;transition:transform .28s ease-out .28s,opacity 0s linear .28s}
+#workskin .polaroid-window[open] .polaroid-front{transform:scaleX(0);opacity:0;transition:transform .28s ease-in,opacity 0s linear .28s,visibility 0s linear .28s}
+#workskin .polaroid-window[open] .polaroid-back{transform:scaleX(1);opacity:1;transition:transform .28s ease-out .28s,opacity 0s linear .28s,visibility 0s linear .28s}
 
 
 #workskin .polaroid-print-switch>summary{padding:0;border:0;border-radius:0;background:transparent}
@@ -804,7 +804,7 @@
 #workskin .imessage .conv-header .conv-name{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:320px){#workskin .imessage{height:440px;min-height:440px;max-height:440px}}
 
-#workskin .imessage .conv-header .conv-name{max-width:calc(100% - 54px)}
+#workskin .imessage .conv-header .conv-name{max-width:100%}
 
 /* Tall handset with separate, stationary conversation and input panels. */
 #workskin .imessage{width:240px;height:525px;min-height:525px;max-height:525px}
@@ -813,7 +813,7 @@
 #workskin .imessage .conv-header table.ch{height:100%}
 #workskin .imessage .conv-header .avatar{width:24px;height:24px;line-height:24px;vertical-align:middle}
 #workskin .imessage .conv-header .avatar img{max-width:100%;height:auto}
-#workskin .imessage .conv-header .conv-name{max-width:calc(100% - 34px);vertical-align:middle}
+#workskin .imessage .conv-header .conv-name{max-width:100%;vertical-align:middle}
 #workskin .imessage .screen{margin:0 10px;padding:14px 10px;border-radius:14px;background-color:#fff}
 #workskin .imessage .composer{height:90px;margin:32px 10px 0;padding:10px;border:0;border-radius:14px;align-items:flex-end;background-color:#fff}
 #workskin .imessage .composer .input{align-self:stretch;max-height:none;min-width:0;overflow-y:auto;border:0;border-radius:0;padding:0;background-color:transparent}
@@ -836,7 +836,7 @@
 #workskin .imessage .conv-header .avatar{display:block;flex:none;width:24px;height:24px;margin-right:6px;line-height:24px}
 #workskin .imessage .conv-header .avatar .initial{font-size:14px;line-height:24px;height:24px}
 #workskin .imessage .conv-header .avatar img{width:24px;height:24px;max-width:24px;margin:0;padding:0}
-#workskin .imessage .conv-header .conv-name{display:block;min-width:0;max-width:calc(100% - 30px);line-height:24px}
+#workskin .imessage .conv-header .conv-name{display:block;min-width:0;max-width:100%;line-height:24px}
 #workskin .imessage .composer .send{display:flex;align-items:center;justify-content:center;line-height:1;padding:0}
 
 /* Native continuation covers page whitespace; actual objects remain above it. */
@@ -1053,14 +1053,14 @@
 /* Optional red ticket. All original ticket selectors and defaults remain intact. */
 #workskin .train-ticket-box.ticket-red{width:440px;max-width:100%;margin:20px auto;padding-bottom:40px;font-family:inherit;color:#fff1db;align-items:stretch}
 #workskin .ticket-red .ticket-main-body{display:flex;flex-direction:column;flex:1;min-width:0;width:auto;height:280px;padding:22px 18px;background-color:#a83c3b;border:1px solid #642125;border-right:2px dashed #552025;border-radius:10px 0 0 10px;box-shadow:-2px 4px 10px rgba(0,0,0,0.15)}
-#workskin .ticket-red .ticket-main-body:before{content:"";position:absolute;top:9px;right:9px;bottom:9px;left:9px;border:1px solid #f3d3b4;border-radius:7px;pointer-events:none}
+#workskin .ticket-red .ticket-main-body:before{content:"";position:absolute;top:9px;right:9px;bottom:9px;left:9px;border:1px solid #f3d3b4;border-radius:7px}
 #workskin .ticket-red-title{position:relative;flex-shrink:0;font-size:1.3em;font-weight:normal;line-height:1.5;text-align:center;padding:0 0 10px;margin:0 0 12px;border-bottom:1px solid #ecc5a5;overflow-wrap:break-word}
 #workskin .ticket-red .ticket-main-text{position:relative;flex:1;min-height:0;height:auto;font-family:inherit;font-size:1em;line-height:1.7;color:inherit;overflow-wrap:break-word}
 #workskin .ticket-red-bottom{position:relative;display:flex;align-items:flex-end;justify-content:space-between;flex-shrink:0;margin-top:12px;max-height:90px;overflow:auto}
 #workskin .ticket-red-footer{font-size:12px;line-height:1.6;overflow-wrap:break-word;min-width:0;flex:1}
 #workskin .ticket-red-stamp{display:block;padding:3px 7px;margin:5px 4px 5px 12px;border:2px solid #f3d3b4;border-radius:3px;font-size:16px;line-height:1.4;transform:rotate(-7deg);overflow-wrap:break-word;max-width:45%}
 #workskin .ticket-red .ticket-stub{position:relative;width:66px;height:280px;background-color:#852b31;border:1px solid #642125;border-left:0;border-radius:0 10px 10px 0;box-shadow:3px 4px 10px rgba(0,0,0,0.15)}
-#workskin .ticket-red .ticket-stub:before{content:"";position:absolute;top:9px;right:9px;bottom:9px;left:9px;border:1px solid #f3d3b4;border-radius:0 6px 6px 0;pointer-events:none}
+#workskin .ticket-red .ticket-stub:before{content:"";position:absolute;top:9px;right:9px;bottom:9px;left:9px;border:1px solid #f3d3b4;border-radius:0 6px 6px 0}
 #workskin .ticket-red .ticket-stub span{position:relative;display:block;writing-mode:horizontal-tb;white-space:nowrap;transform:rotate(90deg);font-family:"Brush Script MT","Segoe Script","Snell Roundhand","Apple Chancery",cursive;font-size:28px;font-weight:normal;font-style:italic;letter-spacing:0;line-height:1.2;padding:0;border:0;color:#fff1db}
 
 #workskin .train-ticket-box.ticket-red br{display:inline !important}
@@ -2007,16 +2007,10 @@
 #workskin img.picture-pos-x-p200,.screen-flash-overlay img.picture-pos-x-p200{position:relative;left:200%}
 #workskin img.picture-pos-y-p200,.screen-flash-overlay img.picture-pos-y-p200{transform:translateY(200%)}
 
-/* Transparent polaroid faces never intercept edits on the visible face. */
-#workskin .polaroid-front{pointer-events:auto}
-#workskin .polaroid-back{pointer-events:none}
-#workskin .polaroid-window[open] .polaroid-front{pointer-events:none}
-#workskin .polaroid-window[open] .polaroid-back{pointer-events:auto}
+/* AO3-compatible hidden photo faces. */
 
 #workskin .game-container .polaroid-page>.step-inner>.effect-page-content{padding-top:0}
 
-#workskin .polaroid-window:not([open]) .polaroid-back *{pointer-events:none!important}
-#workskin .polaroid-window[open] .polaroid-front *{pointer-events:none!important}
 
 /* AO3 simple export: native click reveal, no automatic flashing or scripts. */
 #workskin .ao3-flash-reveal{display:block;width:100%;margin:18px auto;padding:0;border:0;color:inherit}
@@ -2028,3 +2022,8 @@
 #workskin .ao3-ink-white{color:#ffffff}#workskin .ao3-ink-black{color:#000000}#workskin .ao3-ink-red{color:#ff0000}
 #workskin .ao3-flash-copy .font-art{color:inherit}#workskin .ao3-flash-color-pad{display:block;min-height:140px}
 #workskin .game-container .effect-page-content .ao3-flash-reveal{position:relative;z-index:2}
+
+#workskin .polaroid-front{visibility:visible}
+#workskin .polaroid-back{visibility:hidden}
+#workskin .polaroid-window[open] .polaroid-front{visibility:hidden}
+#workskin .polaroid-window[open] .polaroid-back{visibility:visible}

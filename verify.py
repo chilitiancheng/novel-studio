@@ -48,6 +48,8 @@ for name in public_audio & files:
     data = (site / name).read_bytes()
     assert len(data) <= 10 * 1024 * 1024 and (data[:3] == b'ID3' or data[0] == 255), 'Invalid audio asset'
 css = (site / 'effects.css').read_text()
+assert not re.search(r'pointer-events\s*:|calc\s*\(',css,re.I), 'AO3 does not accept pointer-events or calc() in this work skin'
+assert not re.search(r'[^{}]+\{\s*\}',css), 'Empty CSS rule' 
 assert not re.search(r'clip-path|object-fit|gradient|scrollbar|(?:row-|column-)?gap\s*:|grid(?:-[a-z-]+)?\s*:|display\s*:\s*(?:inline-)?grid|(?:^|[;{])\s*font\s*:|background\s*:[^;}]*url\(', css, re.I)
 html = (site / 'index.html').read_text()
 assert 'id="workskin"' in html
