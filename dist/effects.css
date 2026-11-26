@@ -2027,3 +2027,18 @@
 #workskin .polaroid-back{visibility:hidden}
 #workskin .polaroid-window[open] .polaroid-front{visibility:hidden}
 #workskin .polaroid-window[open] .polaroid-back{visibility:visible}
+
+/* Computer terminal preset: static fallback, enhanced by the existing typewriter runtime. */
+#workskin .text-terminal{display:block;max-width:100%;padding:18px 20px;background:#343fff;color:#f5f5f5;font-family:PaperCoverPixel,monospace;font-size:12px;line-height:1.75;font-weight:normal;text-align:left;white-space:pre-wrap;word-wrap:break-word;box-sizing:border-box;min-height:1.75em}
+#workskin .game-container .step-text.terminal-page{background:#343fff;color:#f5f5f5}
+#workskin .terminal-page>.step-inner{align-items:stretch}
+#workskin .terminal-page .text-content{margin:0;padding:12px 8px;text-align:left;color:#f5f5f5}
+#workskin .terminal-caret{display:inline;color:inherit;font-family:inherit;font-size:inherit;line-height:inherit}
+#workskin .terminal-caret[aria-hidden=true]{visibility:visible}
+
+#workskin .text-terminal.text-large{font-size:18px}
+#workskin .text-terminal.text-huge{font-size:24px}
+#workskin .text-terminal.text-bold{font-weight:bold}
+
+#workskin .terminal-page .step-hint{color:#d5d8ff}
+#workskin .terminal-page.terminal-is-playing .step-hint{visibility:hidden}
