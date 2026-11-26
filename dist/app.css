@@ -267,3 +267,5 @@ html,body{height:100%;overflow:hidden}body{height:100vh;height:100dvh}body>main{
 
 /* Author preview only; exported mini reader keeps its portrait layout. */
 .workspace #previewFrame{display:block;width:100%;max-width:none;aspect-ratio:16/9;height:auto!important;margin:0;flex:0 0 auto}.preview-panel .preview-bar{flex-wrap:wrap}.preview-panel:fullscreen,.preview-panel.preview-expanded{position:fixed;inset:0;z-index:10000;width:100%;height:100vh;height:100dvh;margin:0!important;border:0;border-radius:0;display:flex;flex-direction:column;background:#141414;overflow:hidden}.preview-panel:fullscreen .preview-bar,.preview-panel.preview-expanded .preview-bar{flex:0 0 auto;background:var(--panel,#f6f7f3)}.workspace .preview-panel:fullscreen #previewFrame,.workspace .preview-panel.preview-expanded #previewFrame{flex:1 1 auto;width:100%;height:0!important;min-height:0;aspect-ratio:auto;margin:0}
+
+.preview-bar .preview-player-label[hidden],.preview-bar #previewPlayerReset[hidden]{display:none!important}
