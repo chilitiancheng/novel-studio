@@ -2042,3 +2042,23 @@
 
 #workskin .terminal-page .step-hint{color:#d5d8ff}
 #workskin .terminal-page.terminal-is-playing .step-hint{visibility:hidden}
+
+/* Terminal's on-screen keyboard is rendered with buttons and a read-only display. */
+#workskin .terminal-keyboard[hidden]{display:none!important}
+#workskin .terminal-keyboard{display:block;width:auto;max-width:360px;box-sizing:border-box;margin:12px 20px 0;padding:12px 0 0;border-top:1px solid #b4baff;background:#343fff;color:#f5f5f5;font-family:PaperCoverPixel,monospace;font-size:12px;line-height:1.5;text-align:left;white-space:normal}
+#workskin .terminal-input-prompt{margin:0 0 6px;word-wrap:break-word}
+#workskin .terminal-input-display{display:block;min-height:34px;padding:7px 9px;box-sizing:border-box;border:1px solid #d5d8ff;background:#2834dc;color:#fff;font-family:inherit;font-size:14px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word;cursor:default}
+#workskin .terminal-input-display[aria-invalid=true]{border-color:#fff;color:#fff;background:#18209b}
+#workskin .terminal-keyboard-keys,#workskin .terminal-keyboard-row,#workskin .terminal-keyboard-actions{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;width:100%;margin-top:6px;box-sizing:border-box}
+#workskin .terminal-keyboard button{display:block;box-sizing:border-box;min-width:20px;min-height:38px;padding:5px 2px;margin:2px;border:1px solid #d5d8ff;border-radius:2px;background:#343fff;color:#fff;font-family:inherit;font-size:12px;line-height:1.4;font-weight:normal;cursor:pointer;text-align:center;word-wrap:break-word;white-space:normal}
+#workskin .terminal-keyboard button:hover,#workskin .terminal-keyboard button:focus{background:#202ac9;outline:1px solid #fff}
+#workskin .terminal-keyboard-digits .terminal-key{width:28%}
+#workskin .terminal-keyboard-letters .terminal-key{width:8%}
+#workskin .terminal-keyboard-words .terminal-key{width:auto;min-width:68px;max-width:100%;padding:6px 10px}
+#workskin .terminal-keyboard-actions button{min-width:58px;padding:6px 10px}
+#workskin .terminal-keyboard-actions .terminal-confirm{background:#f5f5f5;color:#343fff}
+#workskin .terminal-input-status{min-height:1.5em;margin:6px 0 0;color:inherit;font-size:12px}
+#workskin .terminal-keyboard-solved .terminal-keyboard-keys,#workskin .terminal-keyboard-solved .terminal-keyboard-actions{display:none}
+@media(max-width:600px){#workskin .terminal-keyboard button{min-height:44px}}
+
+#workskin .game-container .step-text.terminal-input-locked .step-hint{display:none}

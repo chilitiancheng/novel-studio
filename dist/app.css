@@ -281,3 +281,5 @@ html,body{height:100%;overflow:hidden}body{height:100vh;height:100dvh}body>main{
 #effectInspectorBody .map-cell-thumbnail{display:block;max-width:100%;max-height:160px;margin:10px auto}
 
 #terminalSettings[hidden]{display:none!important}#terminalSettings{padding:10px;border:1px solid #dce3d6;border-radius:6px;margin:8px 0;background:#fafbf8}#terminalSettings small{display:block;font-size:11px;line-height:1.7;margin:8px 0}#terminalSettings input[type=number]{width:90px;max-width:100%;padding:5px}#terminalSettings input[type=range]{max-width:130px}#terminalSettings label{margin:8px 0}
+
+#terminalInputSettings[hidden],#terminalWordKeysLabel[hidden]{display:none!important}#terminalInputSettings{margin:8px 0;padding:8px 0;border-top:1px solid #dce3d6}#terminalInputSettings>label:not(.font-trigger){display:block;margin:9px 0;font-size:12px}#terminalInputSettings input[type=text],#terminalInputSettings select,#terminalInputSettings textarea{display:block;box-sizing:border-box;width:100%;min-width:0;margin-top:4px;padding:7px;border:1px solid #dce3d6;border-radius:4px;background:#fff;color:#354b30;font:12px/1.6 system-ui}
