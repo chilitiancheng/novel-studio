@@ -290,3 +290,5 @@ html,body{height:100%;overflow:hidden}body{height:100vh;height:100dvh}body>main{
 .image-advanced-tools{width:100%;margin:5px 0;border:1px solid var(--line,#d9ded4);border-radius:6px;padding:5px 8px;box-sizing:border-box}.image-advanced-tools>summary{cursor:pointer;font-size:12px}.image-advanced-tools .effect{margin-top:7px}
 
 .chapter-stat-settings{padding:10px;border-bottom:1px solid #ddd;font-size:12px}.chapter-stat-settings label{display:flex;align-items:center;justify-content:space-between;margin:8px 0}.chapter-stat-settings select{max-width:140px}.chapter-stat-settings small{display:block;line-height:1.6;color:#666}
+
+.zip-chapter-selection{margin:14px 0;padding:12px;border:1px solid #b9c2b5;border-radius:8px}.zip-chapter-selection>div:first-of-type{display:flex;align-items:center;flex-wrap:wrap;margin-bottom:8px}.zip-chapter-selection button{margin-right:8px}.zip-chapter-selection small{display:block;margin-top:8px;line-height:1.6;color:#666}#zipChapterList{max-height:220px;overflow-y:auto}#zipChapterList label{display:flex;align-items:center;padding:6px}#zipChapterList input{margin-right:8px;flex:none}
