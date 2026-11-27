@@ -287,3 +287,4 @@ html,body{height:100%;overflow:hidden}body{height:100vh;height:100dvh}body>main{
 #visualAddText[aria-pressed=true]{background:#405e42;color:#fff}
 
 .character-author-avatar{display:block;max-width:120px;max-height:150px;margin:10px auto}#workCharactersBody textarea{min-height:100px}#workCharactersBody>button{margin:5px 4px 5px 0}
+.image-advanced-tools{width:100%;margin:5px 0;border:1px solid var(--line,#d9ded4);border-radius:6px;padding:5px 8px;box-sizing:border-box}.image-advanced-tools>summary{cursor:pointer;font-size:12px}.image-advanced-tools .effect{margin-top:7px}
